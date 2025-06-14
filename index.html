@@ -2,7 +2,7 @@
 <html lang="ko">
 <head>
 <meta charset="UTF-8" />
-<title>게임 피드 + 다중 태그 필터</title>
+<title>게임 피드 + 태그 필터</title>
 <style>
   body {
     background: #141414;
@@ -10,36 +10,34 @@
     font-family: Arial, sans-serif;
     padding: 20px;
   }
-  .filter-bar {
+  .tag-buttons {
     margin-bottom: 20px;
   }
-  .filter-btn {
-    background: #2a2a2a;
+  .tag-buttons button {
+    background: #333;
     border: none;
+    border-radius: 4px;
     color: #ccc;
-    padding: 8px 14px;
-    margin-right: 8px;
-    margin-bottom: 8px;
-    border-radius: 14px;
     cursor: pointer;
-    font-size: 0.9em;
-    user-select: none;
-    transition: background-color 0.3s, color 0.3s;
+    margin-right: 10px;
+    margin-bottom: 8px;
+    padding: 6px 12px;
+    font-size: 14px;
+    transition: background 0.3s, color 0.3s;
   }
-  .filter-btn.active {
+  .tag-buttons button.selected {
     background: #1e90ff;
     color: white;
   }
   .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    grid-template-columns: repeat(auto-fill,minmax(220px,1fr));
     gap: 16px;
   }
   .card {
     background: #1f1f1f;
     border-radius: 8px;
     overflow: hidden;
-    display: block;
   }
   .card img {
     width: 100%;
@@ -50,322 +48,347 @@
     padding: 10px;
   }
   .info h3 {
-    margin: 0 0 8px;
-    font-size: 1em;
-    color: #1e90ff;
+    margin: 0 0 6px;
+    font-size: 1.05em;
     cursor: pointer;
-    user-select: none;
+    color: #eee;
+  }
+  .info h3 a {
+    color: inherit;
+    text-decoration: none;
   }
   .tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 6px;
+    font-size: 13px;
+    color: #bbb;
   }
-  .tag {
-    background: #2a2a2a;
+  .tags span {
+    background: #333;
     border-radius: 12px;
-    padding: 4px 10px;
-    font-size: 0.8em;
-    color: #ccc;
+    display: inline-block;
+    margin-right: 6px;
+    margin-bottom: 4px;
+    padding: 2px 8px;
     user-select: none;
   }
 </style>
 </head>
 <body>
 
-<div class="filter-bar">
-  <button class="filter-btn active" data-filter="all">전체</button>
-  <button class="filter-btn" data-filter="협동">협동</button>
-  <button class="filter-btn" data-filter="FPS">FPS</button>
-  <button class="filter-btn" data-filter="액션">액션</button>
-  <button class="filter-btn" data-filter="RPG">RPG</button>
-  <button class="filter-btn" data-filter="생존">생존</button>
-  <button class="filter-btn" data-filter="어드벤처">어드벤처</button>
-  <button class="filter-btn" data-filter="시뮬레이션">시뮬레이션</button>
-  <button class="filter-btn" data-filter="MMORPG">MMORPG</button>
-  <button class="filter-btn" data-filter="샌드박스">샌드박스</button>
-  <button class="filter-btn" data-filter="오픈월드">오픈월드</button>
-  <button class="filter-btn" data-filter="리듬">리듬</button>
-  <button class="filter-btn" data-filter="캐주얼">캐주얼</button>
-  <button class="filter-btn" data-filter="전략">전략</button>
-  <button class="filter-btn" data-filter="퍼즐">퍼즐</button>
-  <button class="filter-btn" data-filter="코옵">코옵</button>
-  <button class="filter-btn" data-filter="플랫폼">플랫폼</button>
+<div class="tag-buttons" id="tagButtons">
+  <button data-tag="전체" class="selected">전체</button>
+  <button data-tag="싱글">싱글</button>
+  <button data-tag="멀티">멀티</button>
+  <button data-tag="협동">협동</button>
+  <button data-tag="RPG">RPG</button>
+  <button data-tag="FPS">FPS</button>
+  <button data-tag="전략">전략</button>
+  <button data-tag="오픈월드">오픈월드</button>
+  <button data-tag="클리어">클리어</button>
+  <button data-tag="하트">❤️</button>
+  <button data-tag="하트눈">🥰</button>
+  <button data-tag="노잼">😞</button>
+  <button data-tag="생활">생활</button>
 </div>
 
-<div class="grid">
-  <!-- Deep Rock Galactic -->
-  <div class="card" data-tags="협동 FPS">
-    <img src="https://steamcdn-a.akamaihd.net/steam/apps/548430/header.jpg" alt="Deep Rock Galactic"
-      onclick="window.open('https://store.steampowered.com/app/548430/Deep_Rock_Galactic/', '_blank')" />
-    <div class="info">
-      <h3 onclick="window.open('https://isthereanydeal.com/game/deeprockgalactic/info/', '_blank')">Deep Rock Galactic</h3>
-      <div class="tags">
-        <span class="tag">협동</span>
-        <span class="tag">FPS</span>
-      </div>
-    </div>
-  </div>
-
-  <!-- Gears 5 -->
-  <div class="card" data-tags="협동 액션">
-    <img src="https://steamcdn-a.akamaihd.net/steam/apps/1097840/header.jpg" alt="Gears 5"
-      onclick="window.open('https://store.steampowered.com/app/1097840/Gears_5/', '_blank')" />
-    <div class="info">
-      <h3 onclick="window.open('https://isthereanydeal.com/game/gears-5/info/', '_blank')">Gears 5</h3>
-      <div class="tags">
-        <span class="tag">협동</span>
-        <span class="tag">액션</span>
-      </div>
-    </div>
-  </div>
-
-  <!-- Aliens: Fireteam Elite -->
-  <div class="card" data-tags="협동 FPS">
-    <img src="https://steamcdn-a.akamaihd.net/steam/apps/1549970/header.jpg" alt="Aliens: Fireteam Elite"
-      onclick="window.open('https://store.steampowered.com/app/1549970/Aliens_Fireteam_Elite/', '_blank')" />
-    <div class="info">
-      <h3 onclick="window.open('https://isthereanydeal.com/game/aliens-fireteam-elite/info/', '_blank')">Aliens: Fireteam Elite</h3>
-      <div class="tags">
-        <span class="tag">협동</span>
-        <span class="tag">FPS</span>
-      </div>
-    </div>
-  </div>
-
-  <!-- CODE VEIN -->
-  <div class="card" data-tags="협동 RPG">
-    <img src="https://steamcdn-a.akamaihd.net/steam/apps/678960/header.jpg" alt="CODE VEIN"
-      onclick="window.open('https://store.steampowered.com/app/678960/CODE_VEIN/', '_blank')" />
-    <div class="info">
-      <h3 onclick="window.open('https://isthereanydeal.com/game/code-vein/info/', '_blank')">CODE VEIN</h3>
-      <div class="tags">
-        <span class="tag">협동</span>
-        <span class="tag">RPG</span>
-      </div>
-    </div>
-  </div>
-
-  <!-- GOD EATER 3 -->
-  <div class="card" data-tags="액션 RPG">
-    <img src="https://steamcdn-a.akamaihd.net/steam/apps/899440/header.jpg" alt="GOD EATER 3"
-      onclick="window.open('https://store.steampowered.com/app/899440/GOD_EATER_3/', '_blank')" />
-    <div class="info">
-      <h3 onclick="window.open('https://isthereanydeal.com/game/god-eater-3/info/', '_blank')">GOD EATER 3</h3>
-      <div class="tags">
-        <span class="tag">액션</span>
-        <span class="tag">RPG</span>
-      </div>
-    </div>
-  </div>
-
-  <!-- 루마섬 -->
-  <div class="card" data-tags="어드벤처">
-    <img src="https://steamcdn-a.akamaihd.net/steam/apps/2408820/header.jpg" alt="루마섬"
-      onclick="window.open('https://store.steampowered.com/app/2408820/_/', '_blank')" />
-    <div class="info">
-      <h3 onclick="window.open('https://isthereanydeal.com/game/_/info/', '_blank')">루마섬</h3>
-      <div class="tags">
-        <span class="tag">어드벤처</span>
-      </div>
-    </div>
-  </div>
-
-  <!-- Dinkum -->
-  <div class="card" data-tags="시뮬레이션 샌드박스 생존">
-    <img src="https://steamcdn-a.akamaihd.net/steam/apps/1062520/header.jpg" alt="Dinkum"
-      onclick="window.open('https://store.steampowered.com/app/1062520/Dinkum/', '_blank')" />
-    <div class="info">
-      <h3 onclick="window.open('https://isthereanydeal.com/game/dinkum/info/', '_blank')">Dinkum</h3>
-      <div class="tags">
-        <span class="tag">시뮬레이션</span>
-        <span class="tag">샌드박스</span>
-        <span class="tag">생존</span>
-      </div>
-    </div>
-  </div>
-
-  <!-- Smalland: Survive the Wilds -->
-  <div class="card" data-tags="생존 샌드박스 RPG">
-    <img src="https://steamcdn-a.akamaihd.net/steam/apps/768200/header.jpg" alt="Smalland: Survive the Wilds"
-      onclick="window.open('https://store.steampowered.com/app/768200/Smalland_Survive_the_Wilds/', '_blank')" />
-    <div class="info">
-      <h3 onclick="window.open('https://isthereanydeal.com/game/smalland-survive-the-wilds/info/', '_blank')">Smalland: Survive the Wilds</h3>
-      <div class="tags">
-        <span class="tag">생존</span>
-        <span class="tag">샌드박스</span>
-        <span class="tag">RPG</span>
-      </div>
-    </div>
-  </div>
-
-  <!-- 워해머 버민타이드 -->
-  <div class="card" data-tags="협동 액션 FPS">
-    <img src="https://steamcdn-a.akamaihd.net/steam/apps/235540/header.jpg" alt="워해머 버민타이드"
-      onclick="window.open('https://store.steampowered.com/app/235540/Warhammer_End_Times__Vermintide/', '_blank')" />
-    <div class="info">
-      <h3 onclick="window.open('https://isthereanydeal.com/game/warhammer-end-times-vermintide/info/', '_blank')">워해머 버민타이드</h3>
-      <div class="tags">
-        <span class="tag">협동</span>
-        <span class="tag">액션</span>
-        <span class="tag">FPS</span>
-      </div>
-    </div>
-  </div>
-
-  <!-- 워해머 다크타이드 -->
-  <div class="card" data-tags="협동 액션 FPS">
-    <img src="https://steamcdn-a.akamaihd.net/steam/apps/1361210/header.jpg" alt="워해머 다크타이드"
-      onclick="window.open('https://store.steampowered.com/app/1361210/Warhammer_40000_Darktide/', '_blank')" />
-    <div class="info">
-      <h3 onclick="window.open('https://isthereanydeal.com/game/warhammer-40000-darktide/info/', '_blank')">워해머 다크타이드</h3>
-      <div class="tags">
-        <span class="tag">협동</span>
-        <span class="tag">액션</span>
-        <span class="tag">FPS</span>
-      </div>
-    </div>
-  </div>
-
-  <!-- 워해머 버민타이드2 -->
-  <div class="card" data-tags="협동 액션 FPS">
-    <img src="https://steamcdn-a.akamaihd.net/steam/apps/552500/header.jpg" alt="워해머 버민타이드2"
-      onclick="window.open('https://store.steampowered.com/app/552500/Warhammer_Vermintide_2/', '_blank')" />
-    <div class="info">
-      <h3 onclick="window.open('https://isthereanydeal.com/game/warhammer-vermintide-2/info/', '_blank')">워해머 버민타이드2</h3>
-      <div class="tags">
-        <span class="tag">협동</span>
-        <span class="tag">액션</span>
-        <span class="tag">FPS</span>
-      </div>
-    </div>
-  </div>
-
-  <!-- Beat Saber -->
-  <div class="card" data-tags="리듬 VR">
-    <img src="https://steamcdn-a.akamaihd.net/steam/apps/620980/header.jpg" alt="Beat Saber"
-      onclick="window.open('https://store.steampowered.com/app/620980/Beat_Saber/', '_blank')" />
-    <div class="info">
-      <h3 onclick="window.open('https://isthereanydeal.com/game/beat-saber/info/', '_blank')">Beat Saber</h3>
-      <div class="tags">
-        <span class="tag">리듬</span>
-        <span class="tag">VR</span>
-      </div>
-    </div>
-  </div>
-
-  <!-- Stardew Valley -->
-  <div class="card" data-tags="캐주얼 RPG 시뮬레이션">
-    <img src="https://steamcdn-a.akamaihd.net/steam/apps/413150/header.jpg" alt="Stardew Valley"
-      onclick="window.open('https://store.steampowered.com/app/413150/Stardew_Valley/', '_blank')" />
-    <div class="info">
-      <h3 onclick="window.open('https://isthereanydeal.com/game/stardew-valley/info/', '_blank')">Stardew Valley</h3>
-      <div class="tags">
-        <span class="tag">캐주얼</span>
-        <span class="tag">RPG</span>
-        <span class="tag">시뮬레이션</span>
-      </div>
-    </div>
-  </div>
-
-  <!-- RimWorld -->
-  <div class="card" data-tags="시뮬레이션 전략">
-    <img src="https://steamcdn-a.akamaihd.net/steam/apps/294100/header.jpg" alt="RimWorld"
-      onclick="window.open('https://store.steampowered.com/app/294100/RimWorld/', '_blank')" />
-    <div class="info">
-      <h3 onclick="window.open('https://isthereanydeal.com/game/rimworld/info/', '_blank')">RimWorld</h3>
-      <div class="tags">
-        <span class="tag">시뮬레이션</span>
-        <span class="tag">전략</span>
-      </div>
-    </div>
-  </div>
-
-  <!-- Terraria -->
-  <div class="card" data-tags="샌드박스 생존 플랫폼 액션">
-    <img src="https://steamcdn-a.akamaihd.net/steam/apps/105600/header.jpg" alt="Terraria"
-      onclick="window.open('https://store.steampowered.com/app/105600/Terraria/', '_blank')" />
-    <div class="info">
-      <h3 onclick="window.open('https://isthereanydeal.com/game/terraria/info/', '_blank')">Terraria</h3>
-      <div class="tags">
-        <span class="tag">샌드박스</span>
-        <span class="tag">생존</span>
-        <span class="tag">플랫폼</span>
-        <span class="tag">액션</span>
-      </div>
-    </div>
-  </div>
-
-  <!-- Slay the Spire -->
-  <div class="card" data-tags="전략 RPG 카드">
-    <img src="https://steamcdn-a.akamaihd.net/steam/apps/646570/header.jpg" alt="Slay the Spire"
-      onclick="window.open('https://store.steampowered.com/app/646570/Slay_the_Spire/', '_blank')" />
-    <div class="info">
-      <h3 onclick="window.open('https://isthereanydeal.com/game/slay-the-spire/info/', '_blank')">Slay the Spire</h3>
-      <div class="tags">
-        <span class="tag">전략</span>
-        <span class="tag">RPG</span>
-        <span class="tag">카드</span>
-      </div>
-    </div>
-  </div>
-</div>
+<div class="grid" id="gameGrid"></div>
 
 <script>
-  const filterButtons = document.querySelectorAll('.filter-btn');
-  const cards = document.querySelectorAll('.card');
+  const games = [
+    {
+      name: "바이오쇼크 인피니트",
+      steamUrl: "https://store.steampowered.com/app/8870/BioShock_Infinite/",
+      isthereUrl: "https://isthereanydeal.com/game/bioshock-infinite/info/",
+      thumbnail: "https://cdn.cloudflare.steamstatic.com/steam/apps/8870/header.jpg",
+      tags: ["싱글","RPG","클리어","하트"]
+    },
+    {
+      name: "포탈2",
+      steamUrl: "https://store.steampowered.com/app/620/Portal_2/",
+      isthereUrl: "https://isthereanydeal.com/game/portal-2/info/",
+      thumbnail: "https://cdn.cloudflare.steamstatic.com/steam/apps/620/header.jpg",
+      tags: ["멀티","협동","클리어"]
+    },
+    {
+      name: "It Takes Two",
+      steamUrl: "https://store.steampowered.com/app/1426210/It_Takes_Two/",
+      isthereUrl: "https://isthereanydeal.com/game/it-takes-two/info/",
+      thumbnail: "https://cdn.cloudflare.steamstatic.com/steam/apps/1426210/header.jpg",
+      tags: ["멀티","협동","클리어","하트눈"]
+    },
+    {
+      name: "리스크 오브 레인 2",
+      steamUrl: "https://store.steampowered.com/app/632360/Risk_of_Rain_2/",
+      isthereUrl: "https://isthereanydeal.com/game/risk-of-rain-2/info/",
+      thumbnail: "https://cdn.cloudflare.steamstatic.com/steam/apps/632360/header.jpg",
+      tags: ["멀티","협동","클리어","하트"]
+    },
+    {
+      name: "쓰론브레이커",
+      steamUrl: "https://store.steampowered.com/app/973760/Thronebreaker_The_Witcher_Tales/",
+      isthereUrl: "https://isthereanydeal.com/game/thronebreaker/info/",
+      thumbnail: "https://cdn.cloudflare.steamstatic.com/steam/apps/973760/header.jpg",
+      tags: ["싱글","RPG","클리어"]
+    },
+    {
+      name: "기어스 5",
+      steamUrl: "https://store.steampowered.com/app/1097840/Gears_5/",
+      isthereUrl: "https://isthereanydeal.com/game/gears-5/info/",
+      thumbnail: "https://cdn.cloudflare.steamstatic.com/steam/apps/1097840/header.jpg",
+      tags: ["멀티","협동","FPS"]
+    },
+    {
+      name: "드래곤즈 도그마",
+      steamUrl: "https://store.steampowered.com/app/367500/Dragons_Dogma_Dark_Arisen/",
+      isthereUrl: "https://isthereanydeal.com/game/dragons-dogma-dark-arisen/info/",
+      thumbnail: "https://cdn.cloudflare.steamstatic.com/steam/apps/367500/header.jpg",
+      tags: ["싱글","RPG","노잼"]
+    },
+    {
+      name: "오버쿡 2",
+      steamUrl: "https://store.steampowered.com/app/728880/Overcooked_2/",
+      isthereUrl: "https://isthereanydeal.com/game/overcooked-2/info/",
+      thumbnail: "https://cdn.cloudflare.steamstatic.com/steam/apps/728880/header.jpg",
+      tags: ["멀티","협동","클리어","하트"]
+    },
+    {
+      name: "심포니 오브 워",
+      steamUrl: "https://store.steampowered.com/app/1488200/Symphony_of_War_The_Nephilim_Saga/",
+      isthereUrl: "https://isthereanydeal.com/game/symphony-of-war-the-nephilim-saga/info/",
+      thumbnail: "https://cdn.cloudflare.steamstatic.com/steam/apps/1488200/header.jpg",
+      tags: ["싱글","전략","클리어"]
+    },
+    {
+      name: "트라인 4",
+      steamUrl: "https://store.steampowered.com/app/690640/Trine_4_The_Nightmare_Prince/",
+      isthereUrl: "https://isthereanydeal.com/game/trine-4-the-nightmare-prince/info/",
+      thumbnail: "https://cdn.cloudflare.steamstatic.com/steam/apps/690640/header.jpg",
+      tags: ["싱글","협동","클리어"]
+    },
+    {
+      name: "에이 햇 인 타임",
+      steamUrl: "https://store.steampowered.com/app/253230/A_Hat_in_Time/",
+      isthereUrl: "https://isthereanydeal.com/game/a-hat-in-time/info/",
+      thumbnail: "https://cdn.cloudflare.steamstatic.com/steam/apps/253230/header.jpg",
+      tags: ["싱글","클리어","하트눈"]
+    },
+    {
+    name: "무빙 아웃",
+    steamUrl: "https://store.steampowered.com/app/996770/Moving_Out/",
+    isthereUrl: "https://isthereanydeal.com/game/moving-out/info/",
+    thumbnail: "https://cdn.cloudflare.steamstatic.com/steam/apps/996770/header.jpg",
+    tags: ["멀티", "협동"]
+    },
+    {
+    name: "무빙 아웃 2",
+    steamUrl: "https://store.steampowered.com/app/1641700/Moving_Out_2/",
+    isthereUrl: "https://isthereanydeal.com/game/moving-out-2/info/",
+    thumbnail: "https://cdn.cloudflare.steamstatic.com/steam/apps/1641700/header.jpg",
+    tags: ["멀티", "협동"]
+    },
+    {
+    name: "트라인 5",
+    steamUrl: "https://store.steampowered.com/app/1436700/Trine_5_A_Clockwork_Conspiracy/",
+    isthereUrl: "https://isthereanydeal.com/game/trine-5-the-dungeon-masters/info/",
+    thumbnail: "https://cdn.cloudflare.steamstatic.com/steam/apps/1436700/header.jpg",
+    tags: ["싱글", "협동", "클리어", "하트"]
+    },
+    {
+      name: "어 웨이 아웃",
+      steamUrl: "https://store.steampowered.com/app/1222700/A_Way_Out/",
+      isthereUrl: "https://isthereanydeal.com/game/a-way-out/info/",
+      thumbnail: "https://cdn.cloudflare.steamstatic.com/steam/apps/1222700/header.jpg",
+      tags: ["멀티","협동","클리어","하트"]
+    },
+    {
+    name: "저니 투 더 새비지 플래닛",
+    steamUrl: "https://store.steampowered.com/app/973810/_____Journey_To_The_Savage_Planet/",
+    isthereUrl: "https://isthereanydeal.com/game/journey-to-the-savage-planet/info/",
+    thumbnail: "https://cdn.cloudflare.steamstatic.com/steam/apps/973810/header.jpg",
+    tags: ["싱글", "클리어"]
+    },
+    {
+      name: "바이패드",
+      steamUrl: "https://store.steampowered.com/app/1071870/Biped/",
+      isthereUrl: "https://isthereanydeal.com/game/biped/info/",
+      thumbnail: "https://cdn.cloudflare.steamstatic.com/steam/apps/1071870/header.jpg",
+      tags: ["싱글","협동"]
+    },
+    {
+      name: "포탈 나이츠",
+      steamUrl: "https://store.steampowered.com/app/374040/Portal_Knights/",
+      isthereUrl: "https://isthereanydeal.com/game/portal-knights/info/",
+      thumbnail: "https://cdn.cloudflare.steamstatic.com/steam/apps/374040/header.jpg",
+      tags: ["멀티","RPG","클리어"]
+    },
+    {
+      name: "휴먼 폴 플랫",
+      steamUrl: "https://store.steampowered.com/app/477160/Human_Fall_Flat/",
+      isthereUrl: "https://isthereanydeal.com/game/human-fall-flat/info/",
+      thumbnail: "https://cdn.cloudflare.steamstatic.com/steam/apps/477160/header.jpg",
+      tags: ["멀티","협동","클리어","하트"]
+    },
+    {
+      name: "미아스마 크로니클스",
+      steamUrl: "https://store.steampowered.com/app/1649010/Miasma_Chronicles/",
+      isthereUrl: "https://isthereanydeal.com/game/miasma-chronicles/info/",
+      thumbnail: "https://cdn.cloudflare.steamstatic.com/steam/apps/1649010/header.jpg",
+      tags: ["싱글","RPG","클리어"]
+    },
+    {
+      name: "블랙가드",
+      steamUrl: "https://store.steampowered.com/app/249650/Blackguards/",
+      isthereUrl: "https://isthereanydeal.com/game/blackguards/info/",
+      thumbnail: "https://cdn.cloudflare.steamstatic.com/steam/apps/249650/header.jpg",
+      tags: ["싱글","전략","클리어"]
+    },
+    {
+      name: "구조대작전 라이브",
+      steamUrl: "https://store.steampowered.com/app/1662570/Rescue_Party_Live/",
+      isthereUrl: "https://isthereanydeal.com/game/rescue-party-live/info/",
+      thumbnail: "https://cdn.cloudflare.steamstatic.com/steam/apps/1662570/header.jpg",
+      tags: ["멀티","협동","클리어","하트"]
+    },
+    {
+      name: "우당탕탕 경주",
+      steamUrl: "https://store.steampowered.com/app/1054430/Fling_to_the_Finish/",
+      isthereUrl: "https://isthereanydeal.com/game/fling-to-the-finish/info/",
+      thumbnail: "https://cdn.cloudflare.steamstatic.com/steam/apps/1054430/header.jpg",
+      tags: ["멀티","협동"]
+    },
+    {
+      name: "성녀전기",
+      steamUrl: "https://store.steampowered.com/app/994730/Banner_of_the_Maid/",
+      isthereUrl: "https://isthereanydeal.com/game/banner-of-the-maid/info/",
+      thumbnail: "https://cdn.cloudflare.steamstatic.com/steam/apps/994730/header.jpg",
+      tags: ["싱글","RPG","전략","클리어","하트"]
+    },
+    {
+      name: "조거노츠",
+      steamUrl: "https://store.steampowered.com/app/747620/Joggernauts/",
+      isthereUrl: "https://isthereanydeal.com/game/joggernauts/info/",
+      thumbnail: "https://cdn.cloudflare.steamstatic.com/steam/apps/747620/header.jpg",
+      tags: ["멀티","협동","클리어","하트"]
+    },
+  ];
 
-  function filterCards() {
-    const activeFilters = [...filterButtons]
-      .filter(btn => btn.classList.contains('active') && btn.dataset.filter !== 'all')
-      .map(btn => btn.dataset.filter);
-
-    if (activeFilters.length === 0) {
-      // 전체 필터 또는 필터 없음 → 모든 카드 보이기
-      cards.forEach(card => card.style.display = 'block');
-      // 전체 버튼 활성화
-      filterButtons.forEach(btn => {
-        if (btn.dataset.filter === 'all') btn.classList.add('active');
-        else btn.classList.remove('active');
-      });
-      return;
+  // 정렬 함수: 1~9, a~z, ㄱ~ㅎ
+  function sortGames(a, b) {
+    const order = "0123456789abcdefghijklmnopqrstuvwxyzㄱㄲㄴㄷㄸㄹㅁㅂㅃㅅㅆㅇㅈㅉㅊㅋㅌㅍㅎ";
+    function getOrderIndex(str) {
+      const ch = str[0].toLowerCase();
+      return order.indexOf(ch) === -1 ? 9999 : order.indexOf(ch);
     }
+    return getOrderIndex(a.name) - getOrderIndex(b.name) || a.name.localeCompare(b.name, 'ko');
+  }
 
-    // 전체 버튼 비활성화
-    filterButtons.forEach(btn => {
-      if (btn.dataset.filter === 'all') btn.classList.remove('active');
-    });
+  games.sort(sortGames);
 
-    cards.forEach(card => {
-      const tags = card.getAttribute('data-tags').split(' ');
-      // 선택된 모든 태그를 포함해야 보임
-      const hasAllTags = activeFilters.every(f => tags.includes(f));
-      card.style.display = hasAllTags ? 'block' : 'none';
+  const tagButtons = document.getElementById("tagButtons");
+  const gameGrid = document.getElementById("gameGrid");
+  let selectedTags = [];
+
+  function renderButtons() {
+    const buttons = tagButtons.querySelectorAll("button");
+    buttons.forEach(btn => {
+      btn.classList.toggle("selected", btn.dataset.tag === "전체" && selectedTags.length === 0 || selectedTags.includes(btn.dataset.tag));
     });
   }
 
-  filterButtons.forEach(button => {
-    button.addEventListener('click', () => {
-      const filter = button.dataset.filter;
+  function renderGames() {
+    gameGrid.innerHTML = "";
+    let filtered = games;
+    if (selectedTags.length > 0) {
+      filtered = games.filter(game =>
+        selectedTags.every(t => game.tags.includes(t))
+      );
+    }
 
-      if (filter === 'all') {
-        // 전체 클릭 → 모든 필터 해제, 전체 활성화
-        filterButtons.forEach(btn => btn.classList.remove('active'));
-        button.classList.add('active');
-      } else {
-        // 개별 필터 클릭 → 토글
-        button.classList.toggle('active');
-        // 전체 버튼 비활성화
-        const allBtn = [...filterButtons].find(btn => btn.dataset.filter === 'all');
-        if (allBtn) allBtn.classList.remove('active');
-      }
+    filtered.forEach(game => {
+      const card = document.createElement("div");
+      card.className = "card";
+      card.setAttribute("data-tags", game.tags.join(","));
 
-      filterCards();
+      // 썸네일 (스팀링크)
+      const thumb = document.createElement("img");
+      thumb.src = game.thumbnail;
+      thumb.alt = game.name;
+      thumb.title = "스팀 상점으로 이동";
+      thumb.style.cursor = "pointer";
+      thumb.onclick = () => window.open(game.steamUrl, "_blank");
+      card.appendChild(thumb);
+
+      // 정보 영역
+      const info = document.createElement("div");
+      info.className = "info";
+
+      // 게임 이름 (isthereanydeal 링크)
+      const h3 = document.createElement("h3");
+      const a = document.createElement("a");
+      a.href = game.isthereUrl;
+      a.target = "_blank";
+      a.rel = "noopener noreferrer";
+      a.textContent = game.name;
+      h3.appendChild(a);
+      info.appendChild(h3);
+
+      // 태그 영역
+      const tagsDiv = document.createElement("div");
+      tagsDiv.className = "tags";
+
+      game.tags.forEach(tag => {
+        let displayTag = tag;
+        if (tag === "하트") displayTag = "❤️";
+        else if (tag === "하트눈") displayTag = "🥰";
+        else if (tag === "노잼") displayTag = "😞";
+
+        const span = document.createElement("span");
+        span.textContent = displayTag;
+        tagsDiv.appendChild(span);
+      });
+
+      info.appendChild(tagsDiv);
+      card.appendChild(info);
+
+      gameGrid.appendChild(card);
     });
+  }
+
+  tagButtons.addEventListener("click", e => {
+    if (e.target.tagName !== "BUTTON") return;
+    const tag = e.target.dataset.tag;
+
+    if (tag === "전체") {
+      selectedTags = [];
+    } else {
+      if (selectedTags.includes(tag)) {
+        selectedTags = selectedTags.filter(t => t !== tag);
+      } else {
+        selectedTags.push(tag);
+      }
+    }
+
+    if (selectedTags.length === 0) {
+      // 자동 전체 선택 스타일
+      [...tagButtons.querySelectorAll("button")].forEach(b => {
+        b.classList.toggle("selected", b.dataset.tag === "전체");
+      });
+    } else {
+      tagButtons.querySelector("button[data-tag='전체']").classList.remove("selected");
+    }
+
+    // 선택된 버튼 스타일
+    [...tagButtons.querySelectorAll("button")].forEach(b => {
+      if (b.dataset.tag !== "전체") {
+        b.classList.toggle("selected", selectedTags.includes(b.dataset.tag));
+      }
+    });
+
+    renderGames();
   });
 
-  // 초기 필터 적용
-  filterCards();
+  // 초기 렌더링
+  renderGames();
+  renderButtons();
 </script>
 
 </body>
