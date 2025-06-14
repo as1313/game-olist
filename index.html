@@ -41,6 +41,8 @@
   }
   .card img {
     width: 100%;
+    height: 140px;
+    object-fit: cover; 
     display: block;
     cursor: pointer;
   }
@@ -84,8 +86,12 @@
   <button data-tag="전략">전략</button>
   <button data-tag="오픈월드">오픈월드</button>
   <button data-tag="액션">액션</button>
+  <button data-tag="퍼즐">퍼즐</button>
+  <button data-tag="요리">요리</button>
   <button data-tag="루터슈터">루터슈터</button>
+  <button data-tag="고난이도">고난이도</button>
   <button data-tag="클리어">클리어</button>
+  <button data-tag="아직안함">아직안함</button>
   <button data-tag="하트">❤️</button>
   <button data-tag="하트눈">🥰</button>
   <button data-tag="노잼">😞</button>
@@ -111,7 +117,7 @@
       steamUrl: "https://store.steampowered.com/app/620/Portal_2/",
       isthereUrl: "https://isthereanydeal.com/game/portal-2/info/",
       thumbnail: "https://cdn.cloudflare.steamstatic.com/steam/apps/620/header.jpg",
-      tags: ["멀티","협동","클리어"]
+      tags: ["멀티","협동","퍼즐","클리어"]
     },
     {
       name: "It Takes Two",
@@ -134,7 +140,7 @@
       steamUrl: "https://store.steampowered.com/app/973760/Thronebreaker_The_Witcher_Tales/",
       isthereUrl: "https://isthereanydeal.com/game/thronebreaker/info/",
       thumbnail: "https://cdn.cloudflare.steamstatic.com/steam/apps/973760/header.jpg",
-      tags: ["싱글","RPG","클리어","유튜브"],
+      tags: ["싱글","퍼즐","클리어","하트","유튜브"],
       youtubePlaylistUrl: "https://www.youtube.com/playlist?list=PLtgtY3ehtJpU2iUiS8UyStUKpSuCb8oH0"
     },
     {
@@ -142,7 +148,7 @@
       steamUrl: "https://store.steampowered.com/app/1097840/Gears_5/",
       isthereUrl: "https://isthereanydeal.com/game/gears-5/info/",
       thumbnail: "https://cdn.cloudflare.steamstatic.com/steam/apps/1097840/header.jpg",
-      tags: ["멀티","협동","FPS","유튜브"],
+      tags: ["멀티","협동","FPS","클리어","유튜브"],
       youtubePlaylistUrl: "https://www.youtube.com/playlist?list=PLtgtY3ehtJpWqWT3OAIS-Wwf00ChWgOFm"
     },
     {
@@ -150,14 +156,14 @@
       steamUrl: "https://store.steampowered.com/app/367500/Dragons_Dogma_Dark_Arisen/",
       isthereUrl: "https://isthereanydeal.com/game/dragons-dogma-dark-arisen/info/",
       thumbnail: "https://cdn.cloudflare.steamstatic.com/steam/apps/367500/header.jpg",
-      tags: ["싱글","RPG","노잼"]
+      tags: ["싱글","RPG","클리어","노잼"]
     },
     {
       name: "오버쿡 2",
       steamUrl: "https://store.steampowered.com/app/728880/Overcooked_2/",
       isthereUrl: "https://isthereanydeal.com/game/overcooked-2/info/",
       thumbnail: "https://cdn.cloudflare.steamstatic.com/steam/apps/728880/header.jpg",
-      tags: ["멀티","협동","클리어","하트"]
+      tags: ["멀티","협동","요리","클리어","하트"]
     },
     {
       name: "심포니 오브 워",
@@ -185,21 +191,21 @@
     steamUrl: "https://store.steampowered.com/app/996770/Moving_Out/",
     isthereUrl: "https://isthereanydeal.com/game/moving-out/info/",
     thumbnail: "https://cdn.cloudflare.steamstatic.com/steam/apps/996770/header.jpg",
-    tags: ["멀티", "협동"]
+    tags: ["멀티", "협동","클리어"]
     },
     {
     name: "무빙 아웃 2",
     steamUrl: "https://store.steampowered.com/app/1641700/Moving_Out_2/",
     isthereUrl: "https://isthereanydeal.com/game/moving-out-2/info/",
     thumbnail: "https://cdn.cloudflare.steamstatic.com/steam/apps/1641700/header.jpg",
-    tags: ["멀티", "협동"]
+    tags: ["멀티", "협동","하트","클리어"]
     },
     {
     name: "트라인 5",
     steamUrl: "https://store.steampowered.com/app/1436700/Trine_5_A_Clockwork_Conspiracy/",
     isthereUrl: "https://isthereanydeal.com/game/trine-5-the-dungeon-masters/info/",
     thumbnail: "https://cdn.cloudflare.steamstatic.com/steam/apps/1436700/header.jpg",
-    tags: ["싱글", "협동", "클리어", "하트"]
+    tags: ["멀티", "협동", "클리어", "하트"]
     },
     {
       name: "어 웨이 아웃",
@@ -213,7 +219,7 @@
     steamUrl: "https://store.steampowered.com/app/973810/_____Journey_To_The_Savage_Planet/",
     isthereUrl: "https://isthereanydeal.com/game/journey-to-the-savage-planet/info/",
     thumbnail: "https://cdn.cloudflare.steamstatic.com/steam/apps/973810/header.jpg",
-    tags: ["싱글", "클리어"]
+    tags: ["멀티", "클리어","하트"]
     },
     {
       name: "바이패드",
@@ -283,7 +289,7 @@
   steamUrl: "https://store.steampowered.com/app/49520/Borderlands_2/",
   isthereUrl: "https://isthereanydeal.com/game/borderlands-2/info/",
   thumbnail: "https://cdn.cloudflare.steamstatic.com/steam/apps/49520/header.jpg",
-  tags: ["멀티", "협동", "액션", "FPS", "RPG", "루터슈터"]
+  tags: ["멀티", "협동", "액션", "FPS", "RPG", "루터슈터","아직안함"]
 },
 {
   name: "팝유컴",
@@ -300,9 +306,39 @@
   thumbnail: "https://cdn.cloudflare.steamstatic.com/steam/apps/2221490/header.jpg",
   tags: ["멀티", "FPS", "협동", "하트", "유튜브"],
   youtubePlaylistUrl: "https://www.youtube.com/playlist?list=PLtgtY3ehtJpVTrLnkXiNhKZMs_d2dkauf"
+},
+  {
+    name: "Operation: Tango",
+    steamUrl: "https://store.steampowered.com/app/1335790/Operation_Tango/",
+    isThereAnyDealUrl: "https://isthereanydeal.com/game/operation-tango/info/",
+    thumbnail: "https://cdn.cloudflare.steamstatic.com/steam/apps/1335790/header.jpg",
+    tags: ["멀티", "협동", "클리어", "퍼즐", "하트눈", "유튜브"],
+    youtubePlaylistUrl: "https://www.youtube.com/playlist?list=PLtgtY3ehtJpV8QD74s6onMpPjK6AYPTYO"
+  },
+  {
+    name: "보더랜드3",
+    steamUrl: "https://store.steampowered.com/app/397540/_3/",
+    isThereAnyDealUrl: "https://isthereanydeal.com/game/borderlands-3/info/",
+    thumbnail: "https://cdn.cloudflare.steamstatic.com/steam/apps/397540/header.jpg",
+    tags: ["멀티", "FPS", "오픈월드", "협동", "RPG", "아직안함"]
+  },
+  {
+    name: "타이니 티나의 원더랜드",
+    steamUrl: "https://store.steampowered.com/app/1286680/_/",
+    isThereAnyDealUrl: "https://isthereanydeal.com/game/tiny-tinas-wonderlands/info/",
+    youtubePlaylistUrl: "https://www.youtube.com/playlist?list=PLtgtY3ehtJpWGVPjglusFO7gRZ-D7_es-",
+    thumbnail: "https://cdn.akamai.steamstatic.com/steam/apps/1286680/capsule_616x353.jpg?t=1686625251",
+    tags: ["멀티", "클리어함", "하트", "RPG", "판타지", "유튜브"]
+  },
+{
+  name: "플레이트업!",
+  steamUrl: "https://store.steampowered.com/app/1599600/_/",
+  isThereAnyDealUrl: "https://isthereanydeal.com/game/plateup/info/ ",  // 이건 네가 직접 찾아야 할 수도 있어
+  youtubePlaylistUrl: "https://www.youtube.com/playlist?list=PLtgtY3ehtJpWqSekLvYelncv4EGeCdOzY",
+  thumbnail: "https://cdn.akamai.steamstatic.com/steam/apps/1599600/capsule_616x353.jpg?t=1686625251",  // 스팀 썸네일 주소 예시, 직접 찾아봐야 할 수도 있음
+  tags: ["멀티", "파티", "요리","클리어", "하트", "유튜브"]
 }
-  ];
-
+];
   // 정렬 함수: 1~9, a~z, ㄱ~ㅎ
   function sortGames(a, b) {
     const order = "0123456789abcdefghijklmnopqrstuvwxyzㄱㄲㄴㄷㄸㄹㅁㅂㅃㅅㅆㅇㅈㅉㅊㅋㅌㅍㅎ";
