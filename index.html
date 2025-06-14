@@ -2,266 +2,371 @@
 <html lang="ko">
 <head>
 <meta charset="UTF-8" />
-<title>하고싶은 게임 목록 (나는 다 가지고있음, 가지고있는것중에는 이것들)</title>
+<title>게임 피드 + 다중 태그 필터</title>
 <style>
   body {
+    background: #141414;
+    color: #fff;
     font-family: Arial, sans-serif;
-    font-size: 14px;
-    max-width: 75%;
-    margin: auto;
+    padding: 20px;
   }
-  h1 {
-    font-size: 1.5em;
-    margin-bottom: 0.5em;
+  .filter-bar {
+    margin-bottom: 20px;
   }
-  .game-list {
-    list-style: none;
-    padding: 0;
-  }
-  .game-item {
-    margin-bottom: 1em;
-    display: flex;
-    align-items: center;
-  }
-  .game-item img {
-    width: 80px;
-    height: 45px;
-    object-fit: cover;
-    margin-right: 10px;
-    border-radius: 4px;
-  }
-  .game-text {
-    line-height: 1.2em;
-  }
-  .game-text a {
-    text-decoration: none;
-    color: #0066cc;
-    font-weight: bold;
-  }
-  .game-text a:visited {
-    color: #0066cc; /* 방문해도 색 변하지 않음 */
-  }
-  .game-text .desc {
-    font-weight: normal;
+  .filter-btn {
+    background: #2a2a2a;
+    border: none;
+    color: #ccc;
+    padding: 8px 14px;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    border-radius: 14px;
+    cursor: pointer;
     font-size: 0.9em;
-    color: #555;
-    margin-top: 2px;
+    user-select: none;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  .filter-btn.active {
+    background: #1e90ff;
+    color: white;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 16px;
+  }
+  .card {
+    background: #1f1f1f;
+    border-radius: 8px;
+    overflow: hidden;
+    display: block;
+  }
+  .card img {
+    width: 100%;
+    display: block;
+    cursor: pointer;
+  }
+  .info {
+    padding: 10px;
+  }
+  .info h3 {
+    margin: 0 0 8px;
+    font-size: 1em;
+    color: #1e90ff;
+    cursor: pointer;
+    user-select: none;
+  }
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+  .tag {
+    background: #2a2a2a;
+    border-radius: 12px;
+    padding: 4px 10px;
+    font-size: 0.8em;
+    color: #ccc;
+    user-select: none;
   }
 </style>
 </head>
 <body>
 
-<h1>하고싶은 게임 목록 <small>(나는 다 가지고있음, 가지고있는것중에는 이것들)</small></h1>
+<div class="filter-bar">
+  <button class="filter-btn active" data-filter="all">전체</button>
+  <button class="filter-btn" data-filter="협동">협동</button>
+  <button class="filter-btn" data-filter="FPS">FPS</button>
+  <button class="filter-btn" data-filter="액션">액션</button>
+  <button class="filter-btn" data-filter="RPG">RPG</button>
+  <button class="filter-btn" data-filter="생존">생존</button>
+  <button class="filter-btn" data-filter="어드벤처">어드벤처</button>
+  <button class="filter-btn" data-filter="시뮬레이션">시뮬레이션</button>
+  <button class="filter-btn" data-filter="MMORPG">MMORPG</button>
+  <button class="filter-btn" data-filter="샌드박스">샌드박스</button>
+  <button class="filter-btn" data-filter="오픈월드">오픈월드</button>
+  <button class="filter-btn" data-filter="리듬">리듬</button>
+  <button class="filter-btn" data-filter="캐주얼">캐주얼</button>
+  <button class="filter-btn" data-filter="전략">전략</button>
+  <button class="filter-btn" data-filter="퍼즐">퍼즐</button>
+  <button class="filter-btn" data-filter="코옵">코옵</button>
+  <button class="filter-btn" data-filter="플랫폼">플랫폼</button>
+</div>
 
-<ul class="game-list">
-
-  <li class="game-item">
-    <a href="https://store.steampowered.com/app/235540/Warhammer_End_Times__Vermintide/" target="_blank" rel="noopener noreferrer">
-      <img src="https://cdn.akamai.steamstatic.com/steam/apps/235540/header.jpg" alt="워해머 버민타이드" />
-    </a>
-    <div class="game-text">
-      <a href="https://store.steampowered.com/app/235540/Warhammer_End_Times__Vermintide/" target="_blank" rel="noopener noreferrer">워해머 버민타이드</a>
+<div class="grid">
+  <!-- Deep Rock Galactic -->
+  <div class="card" data-tags="협동 FPS">
+    <img src="https://steamcdn-a.akamaihd.net/steam/apps/548430/header.jpg" alt="Deep Rock Galactic"
+      onclick="window.open('https://store.steampowered.com/app/548430/Deep_Rock_Galactic/', '_blank')" />
+    <div class="info">
+      <h3 onclick="window.open('https://isthereanydeal.com/game/deeprockgalactic/info/', '_blank')">Deep Rock Galactic</h3>
+      <div class="tags">
+        <span class="tag">협동</span>
+        <span class="tag">FPS</span>
+      </div>
     </div>
-  </li>
+  </div>
 
-  <li class="game-item">
-    <a href="https://store.steampowered.com/app/1361210/Warhammer_40000_Darktide/" target="_blank" rel="noopener noreferrer">
-      <img src="https://cdn.akamai.steamstatic.com/steam/apps/1361210/header.jpg" alt="워해머 다크타이드" />
-    </a>
-    <div class="game-text">
-      <a href="https://store.steampowered.com/app/1361210/Warhammer_40000_Darktide/" target="_blank" rel="noopener noreferrer">워해머 다크타이드</a>
+  <!-- Gears 5 -->
+  <div class="card" data-tags="협동 액션">
+    <img src="https://steamcdn-a.akamaihd.net/steam/apps/1097840/header.jpg" alt="Gears 5"
+      onclick="window.open('https://store.steampowered.com/app/1097840/Gears_5/', '_blank')" />
+    <div class="info">
+      <h3 onclick="window.open('https://isthereanydeal.com/game/gears-5/info/', '_blank')">Gears 5</h3>
+      <div class="tags">
+        <span class="tag">협동</span>
+        <span class="tag">액션</span>
+      </div>
     </div>
-  </li>
+  </div>
 
-  <li class="game-item">
-    <a href="https://store.steampowered.com/app/552500/Warhammer_Vermintide_2/" target="_blank" rel="noopener noreferrer">
-      <img src="https://cdn.akamai.steamstatic.com/steam/apps/552500/header.jpg" alt="워해머 버민타이드2" />
-    </a>
-    <div class="game-text">
-      <a href="https://store.steampowered.com/app/552500/Warhammer_Vermintide_2/" target="_blank" rel="noopener noreferrer">워해머 버민타이드2</a>
+  <!-- Aliens: Fireteam Elite -->
+  <div class="card" data-tags="협동 FPS">
+    <img src="https://steamcdn-a.akamaihd.net/steam/apps/1549970/header.jpg" alt="Aliens: Fireteam Elite"
+      onclick="window.open('https://store.steampowered.com/app/1549970/Aliens_Fireteam_Elite/', '_blank')" />
+    <div class="info">
+      <h3 onclick="window.open('https://isthereanydeal.com/game/aliens-fireteam-elite/info/', '_blank')">Aliens: Fireteam Elite</h3>
+      <div class="tags">
+        <span class="tag">협동</span>
+        <span class="tag">FPS</span>
+      </div>
     </div>
-  </li>
+  </div>
 
-  <li class="game-item">
-    <a href="https://store.steampowered.com/app/1496790/Gotham_Knights/" target="_blank" rel="noopener noreferrer">
-      <img src="https://cdn.akamai.steamstatic.com/steam/apps/1496790/header.jpg" alt="고담 나이츠" />
-    </a>
-    <div class="game-text">
-      <a href="https://store.steampowered.com/app/1496790/Gotham_Knights/" target="_blank" rel="noopener noreferrer">고담 나이츠</a>
+  <!-- CODE VEIN -->
+  <div class="card" data-tags="협동 RPG">
+    <img src="https://steamcdn-a.akamaihd.net/steam/apps/678960/header.jpg" alt="CODE VEIN"
+      onclick="window.open('https://store.steampowered.com/app/678960/CODE_VEIN/', '_blank')" />
+    <div class="info">
+      <h3 onclick="window.open('https://isthereanydeal.com/game/code-vein/info/', '_blank')">CODE VEIN</h3>
+      <div class="tags">
+        <span class="tag">협동</span>
+        <span class="tag">RPG</span>
+      </div>
     </div>
-  </li>
+  </div>
 
-  <li class="game-item">
-    <a href="https://store.steampowered.com/app/617290/Remnant_From_the_Ashes/" target="_blank" rel="noopener noreferrer">
-      <img src="https://cdn.akamai.steamstatic.com/steam/apps/617290/header.jpg" alt="Remnant: From the Ashes" />
-    </a>
-    <div class="game-text">
-      <a href="https://store.steampowered.com/app/617290/Remnant_From_the_Ashes/" target="_blank" rel="noopener noreferrer">Remnant: From the Ashes</a>
-      <div class="desc">난에픽에있음 크로스플레이가능</div>
+  <!-- GOD EATER 3 -->
+  <div class="card" data-tags="액션 RPG">
+    <img src="https://steamcdn-a.akamaihd.net/steam/apps/899440/header.jpg" alt="GOD EATER 3"
+      onclick="window.open('https://store.steampowered.com/app/899440/GOD_EATER_3/', '_blank')" />
+    <div class="info">
+      <h3 onclick="window.open('https://isthereanydeal.com/game/god-eater-3/info/', '_blank')">GOD EATER 3</h3>
+      <div class="tags">
+        <span class="tag">액션</span>
+        <span class="tag">RPG</span>
+      </div>
     </div>
-  </li>
+  </div>
 
-  <li class="game-item">
-    <a href="https://store.steampowered.com/app/1151340/Fallout_76/" target="_blank" rel="noopener noreferrer">
-      <img src="https://cdn.akamai.steamstatic.com/steam/apps/1151340/header.jpg" alt="Fallout 76" />
-    </a>
-    <div class="game-text">
-      <a href="https://store.steampowered.com/app/1151340/Fallout_76/" target="_blank" rel="noopener noreferrer">Fallout 76</a>
+  <!-- 루마섬 -->
+  <div class="card" data-tags="어드벤처">
+    <img src="https://steamcdn-a.akamaihd.net/steam/apps/2408820/header.jpg" alt="루마섬"
+      onclick="window.open('https://store.steampowered.com/app/2408820/_/', '_blank')" />
+    <div class="info">
+      <h3 onclick="window.open('https://isthereanydeal.com/game/_/info/', '_blank')">루마섬</h3>
+      <div class="tags">
+        <span class="tag">어드벤처</span>
+      </div>
     </div>
-  </li>
+  </div>
 
-  <li class="game-item">
-    <a href="https://store.steampowered.com/app/306130/The_Elder_Scrolls_Online/" target="_blank" rel="noopener noreferrer">
-      <img src="https://cdn.akamai.steamstatic.com/steam/apps/306130/header.jpg" alt="The Elder Scrolls Online" />
-    </a>
-    <div class="game-text">
-      <a href="https://store.steampowered.com/app/306130/The_Elder_Scrolls_Online/" target="_blank" rel="noopener noreferrer">The Elder Scrolls® Online</a>
-      <div class="desc">난있음 크로스플레이가능</div>
+  <!-- Dinkum -->
+  <div class="card" data-tags="시뮬레이션 샌드박스 생존">
+    <img src="https://steamcdn-a.akamaihd.net/steam/apps/1062520/header.jpg" alt="Dinkum"
+      onclick="window.open('https://store.steampowered.com/app/1062520/Dinkum/', '_blank')" />
+    <div class="info">
+      <h3 onclick="window.open('https://isthereanydeal.com/game/dinkum/info/', '_blank')">Dinkum</h3>
+      <div class="tags">
+        <span class="tag">시뮬레이션</span>
+        <span class="tag">샌드박스</span>
+        <span class="tag">생존</span>
+      </div>
     </div>
-  </li>
+  </div>
 
-  <li class="game-item">
-    <a href="https://store.steampowered.com/app/1286680/" target="_blank" rel="noopener noreferrer">
-      <img src="https://cdn.akamai.steamstatic.com/steam/apps/1286680/header.jpg" alt="타이니 티나의 원더랜드" />
-    </a>
-    <div class="game-text">
-      <a href="https://store.steampowered.com/app/1286680/" target="_blank" rel="noopener noreferrer">타이니 티나의 원더랜드</a>
+  <!-- Smalland: Survive the Wilds -->
+  <div class="card" data-tags="생존 샌드박스 RPG">
+    <img src="https://steamcdn-a.akamaihd.net/steam/apps/768200/header.jpg" alt="Smalland: Survive the Wilds"
+      onclick="window.open('https://store.steampowered.com/app/768200/Smalland_Survive_the_Wilds/', '_blank')" />
+    <div class="info">
+      <h3 onclick="window.open('https://isthereanydeal.com/game/smalland-survive-the-wilds/info/', '_blank')">Smalland: Survive the Wilds</h3>
+      <div class="tags">
+        <span class="tag">생존</span>
+        <span class="tag">샌드박스</span>
+        <span class="tag">RPG</span>
+      </div>
     </div>
-  </li>
+  </div>
 
-  <li class="game-item">
-    <a href="https://store.steampowered.com/app/49520/Borderlands_2/" target="_blank" rel="noopener noreferrer">
-      <img src="https://cdn.akamai.steamstatic.com/steam/apps/49520/header.jpg" alt="보더랜드2" />
-    </a>
-    <div class="game-text">
-      <a href="https://store.steampowered.com/app/49520/Borderlands_2/" target="_blank" rel="noopener noreferrer">보더랜드2</a>
+  <!-- 워해머 버민타이드 -->
+  <div class="card" data-tags="협동 액션 FPS">
+    <img src="https://steamcdn-a.akamaihd.net/steam/apps/235540/header.jpg" alt="워해머 버민타이드"
+      onclick="window.open('https://store.steampowered.com/app/235540/Warhammer_End_Times__Vermintide/', '_blank')" />
+    <div class="info">
+      <h3 onclick="window.open('https://isthereanydeal.com/game/warhammer-end-times-vermintide/info/', '_blank')">워해머 버민타이드</h3>
+      <div class="tags">
+        <span class="tag">협동</span>
+        <span class="tag">액션</span>
+        <span class="tag">FPS</span>
+      </div>
     </div>
-  </li>
+  </div>
 
-  <li class="game-item">
-    <a href="https://store.steampowered.com/app/397540/" target="_blank" rel="noopener noreferrer">
-      <img src="https://cdn.akamai.steamstatic.com/steam/apps/397540/header.jpg" alt="보더랜드3" />
-    </a>
-    <div class="game-text">
-      <a href="https://store.steampowered.com/app/397540/" target="_blank" rel="noopener noreferrer">보더랜드3</a>
+  <!-- 워해머 다크타이드 -->
+  <div class="card" data-tags="협동 액션 FPS">
+    <img src="https://steamcdn-a.akamaihd.net/steam/apps/1361210/header.jpg" alt="워해머 다크타이드"
+      onclick="window.open('https://store.steampowered.com/app/1361210/Warhammer_40000_Darktide/', '_blank')" />
+    <div class="info">
+      <h3 onclick="window.open('https://isthereanydeal.com/game/warhammer-40000-darktide/info/', '_blank')">워해머 다크타이드</h3>
+      <div class="tags">
+        <span class="tag">협동</span>
+        <span class="tag">액션</span>
+        <span class="tag">FPS</span>
+      </div>
     </div>
-  </li>
+  </div>
 
-  <li class="game-item">
-    <a href="https://store.steampowered.com/app/253690/Tiny_Brains/" target="_blank" rel="noopener noreferrer">
-      <img src="https://cdn.akamai.steamstatic.com/steam/apps/253690/header.jpg" alt="Tiny Brains" />
-    </a>
-    <div class="game-text">
-      <a href="https://store.steampowered.com/app/253690/Tiny_Brains/" target="_blank" rel="noopener noreferrer">Tiny Brains</a>
+  <!-- 워해머 버민타이드2 -->
+  <div class="card" data-tags="협동 액션 FPS">
+    <img src="https://steamcdn-a.akamaihd.net/steam/apps/552500/header.jpg" alt="워해머 버민타이드2"
+      onclick="window.open('https://store.steampowered.com/app/552500/Warhammer_Vermintide_2/', '_blank')" />
+    <div class="info">
+      <h3 onclick="window.open('https://isthereanydeal.com/game/warhammer-vermintide-2/info/', '_blank')">워해머 버민타이드2</h3>
+      <div class="tags">
+        <span class="tag">협동</span>
+        <span class="tag">액션</span>
+        <span class="tag">FPS</span>
+      </div>
     </div>
-  </li>
+  </div>
 
-  <li class="game-item">
-    <a href="https://store.steampowered.com/app/2752710/WHAT_THE_PAK/" target="_blank" rel="noopener noreferrer">
-      <img src="https://cdn.akamai.steamstatic.com/steam/apps/2752710/header.jpg" alt="WHAT THE PAK?!" />
-    </a>
-    <div class="game-text">
-      <a href="https://store.steampowered.com/app/2752710/WHAT_THE_PAK/" target="_blank" rel="noopener noreferrer">WHAT THE PAK?!</a>
-      <div class="desc">지금 스팀무료 풀가이즈같은겜</div>
+  <!-- Beat Saber -->
+  <div class="card" data-tags="리듬 VR">
+    <img src="https://steamcdn-a.akamaihd.net/steam/apps/620980/header.jpg" alt="Beat Saber"
+      onclick="window.open('https://store.steampowered.com/app/620980/Beat_Saber/', '_blank')" />
+    <div class="info">
+      <h3 onclick="window.open('https://isthereanydeal.com/game/beat-saber/info/', '_blank')">Beat Saber</h3>
+      <div class="tags">
+        <span class="tag">리듬</span>
+        <span class="tag">VR</span>
+      </div>
     </div>
-  </li>
+  </div>
 
-  <li class="game-item">
-    <a href="https://store.steampowered.com/app/794260/Outward_Definitive_Edition/" target="_blank" rel="noopener noreferrer">
-      <img src="https://cdn.akamai.steamstatic.com/steam/apps/794260/header.jpg" alt="Outward" />
-    </a>
-    <div class="game-text">
-      <a href="https://store.steampowered.com/app/794260/Outward_Definitive_Edition/" target="_blank" rel="noopener noreferrer">Outward</a>
+  <!-- Stardew Valley -->
+  <div class="card" data-tags="캐주얼 RPG 시뮬레이션">
+    <img src="https://steamcdn-a.akamaihd.net/steam/apps/413150/header.jpg" alt="Stardew Valley"
+      onclick="window.open('https://store.steampowered.com/app/413150/Stardew_Valley/', '_blank')" />
+    <div class="info">
+      <h3 onclick="window.open('https://isthereanydeal.com/game/stardew-valley/info/', '_blank')">Stardew Valley</h3>
+      <div class="tags">
+        <span class="tag">캐주얼</span>
+        <span class="tag">RPG</span>
+        <span class="tag">시뮬레이션</span>
+      </div>
     </div>
-  </li>
+  </div>
 
-  <li class="game-item">
-    <a href="https://store.steampowered.com/app/1056960/Wolfenstein_Youngblood/" target="_blank" rel="noopener noreferrer">
-      <img src="https://cdn.akamai.steamstatic.com/steam/apps/1056960/header.jpg" alt="Wolfenstein: Youngblood" />
-    </a>
-    <div class="game-text">
-      <a href="https://store.steampowered.com/app/1056960/Wolfenstein_Youngblood/" target="_blank" rel="noopener noreferrer">Wolfenstein: Youngblood</a>
-      <div class="desc">2인협동총겜(곰이랑2인협동겜도 하고싶음 파크라이같은거)</div>
+  <!-- RimWorld -->
+  <div class="card" data-tags="시뮬레이션 전략">
+    <img src="https://steamcdn-a.akamaihd.net/steam/apps/294100/header.jpg" alt="RimWorld"
+      onclick="window.open('https://store.steampowered.com/app/294100/RimWorld/', '_blank')" />
+    <div class="info">
+      <h3 onclick="window.open('https://isthereanydeal.com/game/rimworld/info/', '_blank')">RimWorld</h3>
+      <div class="tags">
+        <span class="tag">시뮬레이션</span>
+        <span class="tag">전략</span>
+      </div>
     </div>
-  </li>
+  </div>
 
-  <li class="game-item">
-    <a href="https://store.steampowered.com/app/2617700/Tinkerlands/" target="_blank" rel="noopener noreferrer">
-      <img src="https://cdn.akamai.steamstatic.com/steam/apps/2617700/header.jpg" alt="Tinkerlands" />
-    </a>
-    <div class="game-text">
-      <a href="https://store.steampowered.com/app/2617700/Tinkerlands/" target="_blank" rel="noopener noreferrer">Tinkerlands</a>
-      <div class="desc">이것두해야징</div>
+  <!-- Terraria -->
+  <div class="card" data-tags="샌드박스 생존 플랫폼 액션">
+    <img src="https://steamcdn-a.akamaihd.net/steam/apps/105600/header.jpg" alt="Terraria"
+      onclick="window.open('https://store.steampowered.com/app/105600/Terraria/', '_blank')" />
+    <div class="info">
+      <h3 onclick="window.open('https://isthereanydeal.com/game/terraria/info/', '_blank')">Terraria</h3>
+      <div class="tags">
+        <span class="tag">샌드박스</span>
+        <span class="tag">생존</span>
+        <span class="tag">플랫폼</span>
+        <span class="tag">액션</span>
+      </div>
     </div>
-  </li>
+  </div>
 
-  <li class="game-item">
-    <a href="https://store.steampowered.com/app/858820/Tribes_of_Midgard/" target="_blank" rel="noopener noreferrer">
-      <img src="https://cdn.akamai.steamstatic.com/steam/apps/858820/header.jpg" alt="Tribes of Midgard" />
-    </a>
-    <div class="game-text">
-      <a href="https://store.steampowered.com/app/858820/Tribes_of_Midgard/" target="_blank" rel="noopener noreferrer">Tribes of Midgard</a>
-      <div class="desc">이건 곰이랑 피공님도 있음 막땡기지는않음</div>
+  <!-- Slay the Spire -->
+  <div class="card" data-tags="전략 RPG 카드">
+    <img src="https://steamcdn-a.akamaihd.net/steam/apps/646570/header.jpg" alt="Slay the Spire"
+      onclick="window.open('https://store.steampowered.com/app/646570/Slay_the_Spire/', '_blank')" />
+    <div class="info">
+      <h3 onclick="window.open('https://isthereanydeal.com/game/slay-the-spire/info/', '_blank')">Slay the Spire</h3>
+      <div class="tags">
+        <span class="tag">전략</span>
+        <span class="tag">RPG</span>
+        <span class="tag">카드</span>
+      </div>
     </div>
-  </li>
+  </div>
+</div>
 
-  <li class="game-item">
-    <a href="https://store.steampowered.com/app/105600/Terraria/" target="_blank" rel="noopener noreferrer">
-      <img src="https://cdn.akamai.steamstatic.com/steam/apps/105600/header.jpg" alt="Terraria" />
-    </a>
-    <div class="game-text">
-      <a href="https://store.steampowered.com/app/105600/Terraria/" target="_blank" rel="noopener noreferrer">Terraria</a>
-      <div class="desc">이것도 다있음</div>
-    </div>
-  </li>
+<script>
+  const filterButtons = document.querySelectorAll('.filter-btn');
+  const cards = document.querySelectorAll('.card');
 
-  <li class="game-item">
-    <a href="https://store.steampowered.com/app/271590/Grand_Theft_Auto_V/" target="_blank" rel="noopener noreferrer">
-      <img src="https://cdn.akamai.steamstatic.com/steam/apps/271590/header.jpg" alt="Grand Theft Auto V" />
-    </a>
-    <div class="game-text">
-      <a href="https://store.steampowered.com/app/271590/Grand_Theft_Auto_V/" target="_blank" rel="noopener noreferrer">Grand Theft Auto V</a>
-      <div class="desc">히히</div>
-    </div>
-  </li>
+  function filterCards() {
+    const activeFilters = [...filterButtons]
+      .filter(btn => btn.classList.contains('active') && btn.dataset.filter !== 'all')
+      .map(btn => btn.dataset.filter);
 
-  <li class="game-item">
-    <a href="https://store.steampowered.com/app/1812560/SUPER_CRAZY_RHYTHM_CASTLE/" target="_blank" rel="noopener noreferrer">
-      <img src="https://cdn.akamai.steamstatic.com/steam/apps/1812560/header.jpg" alt="SUPER CRAZY RHYTHM CASTLE" />
-    </a>
-    <div class="game-text">
-      <a href="https://store.steampowered.com/app/1812560/SUPER_CRAZY_RHYTHM_CASTLE/" target="_blank" rel="noopener noreferrer">SUPER CRAZY RHYTHM CASTLE</a>
-      <div class="desc">리듬겜 눈아파서 살짝하고픔</div>
-    </div>
-  </li>
+    if (activeFilters.length === 0) {
+      // 전체 필터 또는 필터 없음 → 모든 카드 보이기
+      cards.forEach(card => card.style.display = 'block');
+      // 전체 버튼 활성화
+      filterButtons.forEach(btn => {
+        if (btn.dataset.filter === 'all') btn.classList.add('active');
+        else btn.classList.remove('active');
+      });
+      return;
+    }
 
-  <li class="game-item">
-    <a href="https://store.steampowered.com/app/435150/Divinity_Original_Sin_2__Definitive_Edition/" target="_blank" rel="noopener noreferrer">
-      <img src="https://cdn.akamai.steamstatic.com/steam/apps/435150/header.jpg" alt="Divinity: Original Sin 2" />
-    </a>
-    <div class="game-text">
-      <a href="https://store.steampowered.com/app/435150/Divinity_Original_Sin_2__Definitive_Edition/" target="_blank" rel="noopener noreferrer">디비니티2</a>
-      <div class="desc">요런거 좋아함</div>
- <li class="game-item">
-    <a href="https://store.steampowered.com/app/477160/Human_Fall_Flat/" target="_blank" rel="noopener noreferrer">
-      <img src="https://cdn.akamai.steamstatic.com/steam/apps/477160/header.jpg" alt="Human Fall Flat" />
-    </a>
-    <div class="game-text">
-      <a href="https://store.steampowered.com/app/477160/Human_Fall_Flat/" target="_blank" rel="noopener noreferrer">Human Fall Flat</a>
-      <div class="desc">신맵깨고싶다.</div>
-    </div>
-  </li>
+    // 전체 버튼 비활성화
+    filterButtons.forEach(btn => {
+      if (btn.dataset.filter === 'all') btn.classList.remove('active');
+    });
 
-  <li class="game-item">
-    <a href="https://store.steampowered.com/app/253230/A_Hat_in_Time/" target="_blank" rel="noopener noreferrer">
-      <img src="https://cdn.akamai.steamstatic.com/steam/apps/253230/header.jpg" alt="A Hat in Time" />
-    </a>
-    <div class="game-text">
-      <a href="https://store.steampowered.com/app/253230/A_Hat_in_Time/" target="_blank" rel="noopener noreferrer">A Hat in Time</a>
-      <div class="desc">이거는 안지움, 더 깨보고싶음</div>
-    </div>
-  </li>
-</ul>
+    cards.forEach(card => {
+      const tags = card.getAttribute('data-tags').split(' ');
+      // 선택된 모든 태그를 포함해야 보임
+      const hasAllTags = activeFilters.every(f => tags.includes(f));
+      card.style.display = hasAllTags ? 'block' : 'none';
+    });
+  }
+
+  filterButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      const filter = button.dataset.filter;
+
+      if (filter === 'all') {
+        // 전체 클릭 → 모든 필터 해제, 전체 활성화
+        filterButtons.forEach(btn => btn.classList.remove('active'));
+        button.classList.add('active');
+      } else {
+        // 개별 필터 클릭 → 토글
+        button.classList.toggle('active');
+        // 전체 버튼 비활성화
+        const allBtn = [...filterButtons].find(btn => btn.dataset.filter === 'all');
+        if (allBtn) allBtn.classList.remove('active');
+      }
+
+      filterCards();
+    });
+  });
+
+  // 초기 필터 적용
+  filterCards();
+</script>
 
 </body>
 </html>
