@@ -88,6 +88,7 @@
   <button data-tag="하트눈">🥰</button>
   <button data-tag="노잼">😞</button>
   <button data-tag="생활">생활</button>
+  <button data-tag="유튜브">▶️</button>
 </div>
 
 <div class="grid" id="gameGrid"></div>
@@ -113,28 +114,32 @@
       steamUrl: "https://store.steampowered.com/app/1426210/It_Takes_Two/",
       isthereUrl: "https://isthereanydeal.com/game/it-takes-two/info/",
       thumbnail: "https://cdn.cloudflare.steamstatic.com/steam/apps/1426210/header.jpg",
-      tags: ["멀티","협동","클리어","하트눈"]
+      tags: ["멀티","협동","클리어","하트눈","유튜브"],
+      youtubePlaylistUrl: "https://www.youtube.com/playlist?list=PLtgtY3ehtJpXDxm54AdS5R6NnRaCG_pCW"
     },
     {
       name: "리스크 오브 레인 2",
       steamUrl: "https://store.steampowered.com/app/632360/Risk_of_Rain_2/",
       isthereUrl: "https://isthereanydeal.com/game/risk-of-rain-2/info/",
       thumbnail: "https://cdn.cloudflare.steamstatic.com/steam/apps/632360/header.jpg",
-      tags: ["멀티","협동","클리어","하트"]
+      tags: ["멀티","협동","클리어","하트","유튜브"],
+      youtubePlaylistUrl: "https://www.youtube.com/playlist?list=PLtgtY3ehtJpVeRlCpRVGjTgne0PUda9n8"
     },
     {
       name: "쓰론브레이커",
       steamUrl: "https://store.steampowered.com/app/973760/Thronebreaker_The_Witcher_Tales/",
       isthereUrl: "https://isthereanydeal.com/game/thronebreaker/info/",
       thumbnail: "https://cdn.cloudflare.steamstatic.com/steam/apps/973760/header.jpg",
-      tags: ["싱글","RPG","클리어"]
+      tags: ["싱글","RPG","클리어","유튜브"],
+      youtubePlaylistUrl: "https://www.youtube.com/playlist?list=PLtgtY3ehtJpU2iUiS8UyStUKpSuCb8oH0"
     },
     {
       name: "기어스 5",
       steamUrl: "https://store.steampowered.com/app/1097840/Gears_5/",
       isthereUrl: "https://isthereanydeal.com/game/gears-5/info/",
       thumbnail: "https://cdn.cloudflare.steamstatic.com/steam/apps/1097840/header.jpg",
-      tags: ["멀티","협동","FPS"]
+      tags: ["멀티","협동","FPS","유튜브"],
+      youtubePlaylistUrl: "https://www.youtube.com/playlist?list=PLtgtY3ehtJpWqWT3OAIS-Wwf00ChWgOFm"
     },
     {
       name: "드래곤즈 도그마",
@@ -340,9 +345,18 @@
         if (tag === "하트") displayTag = "❤️";
         else if (tag === "하트눈") displayTag = "🥰";
         else if (tag === "노잼") displayTag = "😞";
+        else if (tag === "유튜브") displayTag = "▶️";
 
         const span = document.createElement("span");
         span.textContent = displayTag;
+
+  // 유튜브 태그일 때 클릭 이벤트 추가 (youtubePlaylistUrl 있을 때)
+  if (tag === "유튜브" && game.youtubePlaylistUrl) {
+    span.style.cursor = "pointer";
+    span.title = "유튜브 재생목록 열기";
+    span.onclick = () => window.open(game.youtubePlaylistUrl, "_blank");
+  }
+
         tagsDiv.appendChild(span);
       });
 
