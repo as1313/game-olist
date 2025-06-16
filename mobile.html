@@ -104,6 +104,18 @@
 <div class="grid" id="gameGrid"></div>
 <script src="games.js"></script>
 <script>
+  // 1. 정렬 함수 추가
+  function sortGames(a, b) {
+    const order = "0123456789abcdefghijklmnopqrstuvwxyzㄱㄲㄴㄷㄸㄹㅁㅂㅃㅅㅆㅇㅈㅉㅊㅋㅌㅍㅎ";
+    function getOrderIndex(str) {
+      const ch = str[0].toLowerCase();
+      return order.indexOf(ch) === -1 ? 9999 : order.indexOf(ch);
+    }
+    return getOrderIndex(a.name) - getOrderIndex(b.name) || a.name.localeCompare(b.name, 'ko');
+  }
+
+  // 2. 정렬 실행
+  games.sort(sortGames);
 
 
   const tagButtons = document.getElementById("tagButtons");
