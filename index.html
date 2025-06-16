@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
+  <script>
+  if (/Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent)) {
+    window.location.href = "mobile.html"; // 모바일용 HTML 파일 경로
+  }
+</script>
 <meta charset="UTF-8" />
 <title>게임 피드 + 태그 필터</title>
 <style>
