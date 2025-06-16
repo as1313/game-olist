@@ -697,4 +697,26 @@
   "steamUrl": "https://store.steampowered.com/app/2001120/Split_Fiction/",
   "isthereUrl": "https://isthereanydeal.com/game/split-fiction/info/",
   "tags": ["멀티", "퍼즐", "어드벤처", "협동", "아직안함"]
-},];
+},
+{
+  "name": "Verdun",
+  "thumbnail": "https://cdn.cloudflare.steamstatic.com/steam/apps/242860/header.jpg",
+  "steamUrl": "https://store.steampowered.com/app/242860/Verdun/",
+  "isthereUrl": "https://isthereanydeal.com/game/verdun/info/",
+  "tags": ["멀티", "FPS", "전쟁", "아직안함"]
+},
+{
+  "name": "인피니티 스트랏슈 드래곤 퀘스트 다이의 대모험",
+  "thumbnail": "https://cdn.cloudflare.steamstatic.com/steam/apps/1895810/header.jpg",
+  "steamUrl": "https://store.steampowered.com/app/1895810/_/",
+  "isthereUrl": "https://isthereanydeal.com/game/infinity-strash-dragon-quest-the-adventure-of-dai/info/",
+  "tags": ["싱글", "RPG", "액션", "판타지","하트", "아직안함"]
+},
+{
+  name: "EARTH DEFENSE FORCE 5",
+  thumbnail: "https://cdn.cloudflare.steamstatic.com/steam/apps/1007040/header.jpg",
+  steamUrl: "https://store.steampowered.com/app/1007040/EARTH_DEFENSE_FORCE_5/",
+  isthereUrl: "https://isthereanydeal.com/game/earth-defense-force-5/info/",
+  tags: ["싱글", "멀티", "액션", "슈팅", "협동", "아직안함"]
+},
+];
