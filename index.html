@@ -146,25 +146,37 @@
       const tagsDiv = document.createElement("div");
       tagsDiv.className = "tags";
 
-      game.tags.forEach(tag => {
-        let displayTag = tag;
-        if (tag === "하트") displayTag = "❤️";
-        else if (tag === "하트눈") displayTag = "🥰";
-        else if (tag === "노잼") displayTag = "😞";
-        else if (tag === "유튜브") displayTag = "▶️";
+game.tags.forEach(tag => {
+  let displayTag = tag;
+  if (tag === "하트") displayTag = "❤️";
+  else if (tag === "하트눈") displayTag = "🥰";
+  else if (tag === "노잼") displayTag = "😞";
+  else if (tag === "유튜브") displayTag = "▶️";
 
-        const span = document.createElement("span");
-        span.textContent = displayTag;
+  const span = document.createElement("span");
+  span.textContent = displayTag;
 
-  // 유튜브 태그일 때 클릭 이벤트 추가 (youtubePlaylistUrl 있을 때)
   if (tag === "유튜브" && game.youtubePlaylistUrl) {
     span.style.cursor = "pointer";
     span.title = "유튜브 재생목록 열기";
     span.onclick = () => window.open(game.youtubePlaylistUrl, "_blank");
+  } else {
+    // 유튜브 외 태그 클릭 시 필터링 동작 추가
+    span.style.cursor = "pointer";
+    span.title = `${tag} 태그로 필터링`;
+    span.onclick = () => {
+      if (selectedTags.includes(tag)) {
+        selectedTags = selectedTags.filter(t => t !== tag);
+      } else {
+        selectedTags.push(tag);
+      }
+      renderButtons();
+      renderGames();
+    };
   }
 
-        tagsDiv.appendChild(span);
-      });
+  tagsDiv.appendChild(span);
+});
 
       info.appendChild(tagsDiv);
       card.appendChild(info);
