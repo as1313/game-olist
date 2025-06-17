@@ -10,9 +10,19 @@ const tags = [
 
 const tagContainer = document.getElementById("tagButtons");
 
+// 👇 아이콘 매핑 추가
+const tagIcons = {
+  "하트": "❤️",
+  "하트눈": "🥰",
+  "노잼": "😞",
+  "유튜브": "▶️"
+};
+
+
 tags.forEach(tag => {
   const button = document.createElement("button");
-  button.textContent = tag;
+  // 👇 아이콘이 있으면 아이콘으로, 없으면 원래 텍스트로
+  button.textContent = tagIcons[tag] || tag;
   button.dataset.tag = tag;
   if (tag === "전체") {
     button.classList.add("selected");
