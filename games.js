@@ -682,7 +682,7 @@
   "thumbnail": "https://cdn.cloudflare.steamstatic.com/steam/apps/1177980/header.jpg",
   "steamUrl": "https://store.steampowered.com/app/1177980/Little_Kitty_Big_City/",
   "isthereUrl": "https://isthereanydeal.com/game/little-kitty-big-city/info/",
-  "tags": ["싱글", "귀여움", "생활", "캐주얼", "탐험", "아직안함"]
+  "tags": ["싱글", "귀여움", "생활","고양이", "캐주얼", "탐험", "아직안함"]
 },
 {
   "name": "The Elder Scrolls Online",
@@ -710,7 +710,7 @@
   "thumbnail": "https://cdn.cloudflare.steamstatic.com/steam/apps/1895810/header.jpg",
   "steamUrl": "https://store.steampowered.com/app/1895810/_/",
   "isthereUrl": "https://isthereanydeal.com/game/infinity-strash-dragon-quest-the-adventure-of-dai/info/",
-  "tags": ["싱글", "RPG", "액션", "판타지","하트", "아직안함"]
+  "tags": ["싱글", "RPG", "액션", "판타지","하트","노잼", "아직안함"]
 },
 {
   name: "EARTH DEFENSE FORCE 5",
@@ -718,5 +718,33 @@
   steamUrl: "https://store.steampowered.com/app/1007040/EARTH_DEFENSE_FORCE_5/",
   isthereUrl: "https://isthereanydeal.com/game/earth-defense-force-5/info/",
   tags: ["싱글", "멀티", "액션", "슈팅", "협동", "아직안함"]
+},
+{
+  "name": "Don't Starve Together",
+  "thumbnail": "https://cdn.cloudflare.steamstatic.com/steam/apps/322330/header.jpg",
+  "steamUrl": "https://store.steampowered.com/app/322330/Dont_Starve_Together/",
+  "isthereUrl": "https://isthereanydeal.com/game/dont-starve-together/info/",
+  "tags": ["멀티", "생존", "협동", "아직안함"]
+},
+{
+  "name": "Tom Clancy's Ghost Recon® Wildlands",
+  "thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/460930/header.jpg",
+  "steamUrl": "https://store.steampowered.com/app/460930/Tom_Clancys_Ghost_Recon_Wildlands/",
+  "isthereUrl": "https://isthereanydeal.com/game/tom-clancys-ghost-recon-wildlands/info/",
+  "tags": ["싱글", "멀티", "액션", "오픈월드", "슈팅", "아직안함"]
+},
+{
+  "name": "Tom Clancy's Ghost Recon® Breakpoint",
+  "thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/2231380/header.jpg",
+  "steamUrl": "https://store.steampowered.com/app/2231380/Tom_Clancys_Ghost_Recon_Breakpoint/",
+  "isthereUrl": "https://isthereanydeal.com/game/tom-clancys-ghost-recon-breakpoint/info/",
+  "tags": ["싱글", "멀티", "액션", "오픈월드", "슈팅", "아직안함"]
+},
+{
+  "name": "Ys VIII: Lacrimosa of DANA",
+  "thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/579180/header.jpg",
+  "steamUrl": "https://store.steampowered.com/app/579180/Ys_VIII_Lacrimosa_of_DANA/",
+  "isthereUrl": "https://isthereanydeal.com/game/ys-viii-lacrimosa-of-dana/info/",
+  "tags": ["싱글","협동", "액션","RPG", "어드벤처", "판타지", "아직안함"]
 },
 ];
