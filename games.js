@@ -11,7 +11,7 @@
       steamUrl: "https://store.steampowered.com/app/620/Portal_2/",
       isthereUrl: "https://isthereanydeal.com/game/portal-2/info/",
       thumbnail: "https://cdn.cloudflare.steamstatic.com/steam/apps/620/header.jpg",
-      tags: ["멀티","협동","퍼즐","클리어"]
+      tags: ["멀티","협동","퍼즐","GOTY" ,"클리어"]
     },
     {
       name: "It Takes Two",
@@ -262,7 +262,7 @@
   thumbnail: "https://cdn.cloudflare.steamstatic.com/steam/apps/271590/header.jpg",
   steamUrl: "https://store.steampowered.com/app/271590/Grand_Theft_Auto_V/",
   isthereUrl: "https://isthereanydeal.com/game/grand-theft-auto-v/info/",
-  tags: ["멀티", "오픈월드", "액션","유튜브"],
+  tags: ["멀티", "오픈월드", "액션","GPTY","유튜브"],
   youtubePlaylistUrl: "https://www.youtube.com/playlist?list=PLtgtY3ehtJpX_3ro4FSkitXxE1flvVsYc"
 },
 {
@@ -794,5 +794,26 @@
   "steamUrl": "https://store.steampowered.com/app/1812090/Escape_Academy/",
   "isthereUrl": "https://isthereanydeal.com/game/escapeacademy/info/",
   "tags": ["멀티", "퍼즐", "협동", "방탈출", "캐주얼", "아직안함"]
+},
+{
+  "name": "Voidtrain",
+  "thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1159690/header.jpg",
+  "steamUrl": "https://store.steampowered.com/app/1159690/Voidtrain/",
+  "isthereUrl": "https://isthereanydeal.com/game/voidtrain/info/",
+  "tags": ["싱글", "멀티", "생존", "협동", "SF", "아직안함"]
+},
+{
+  "name": "Hot Lava",
+  "thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/382560/header.jpg",
+  "steamUrl": "https://store.steampowered.com/app/382560/Hot_Lava/",
+  "isthereUrl": "https://isthereanydeal.com/game/hotlava/info/",
+  "tags": ["싱글", "멀티", "플랫포머", "파쿠르", "협동", "아직안함"]
+},
+{
+  "name": "Returnal™",
+  "thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1649240/header.jpg",
+  "steamUrl": "https://store.steampowered.com/app/1649240/Returnal/",
+  "isthereUrl": "https://isthereanydeal.com/game/returnal/info/",
+  "tags": ["싱글", "멀티", "TPS", "로그라이크", "고난이도", "GOTY", "아직안함"]
 },
 ];
