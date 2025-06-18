@@ -147,21 +147,27 @@
       title.appendChild(link);
       const tagsDiv = document.createElement("div");
       tagsDiv.className = "tags";
-      game.tags.forEach(tag => {
-        if (tag === "유튜브" && game.youtubePlaylistUrl) {
-          const a = document.createElement("a");
-          a.href = game.youtubePlaylistUrl;
-          a.target = "_blank";
-          const span = document.createElement("span");
-          span.textContent = "▶️";
-          a.appendChild(span);
-          tagsDiv.appendChild(a);
-        } else {
-          const span = document.createElement("span");
-          span.textContent = tag;
-          tagsDiv.appendChild(span);
-        }
-      });
+game.tags.forEach(tag => {
+  let displayTag = tag;
+  if (tag === "하트") displayTag = "❤️";
+  else if (tag === "하트눈") displayTag = "🥰";
+  else if (tag === "노잼") displayTag = "😞";
+  else if (tag === "유튜브") displayTag = "▶️";
+
+  if (tag === "유튜브" && game.youtubePlaylistUrl) {
+    const a = document.createElement("a");
+    a.href = game.youtubePlaylistUrl;
+    a.target = "_blank";
+    const span = document.createElement("span");
+    span.textContent = displayTag;
+    a.appendChild(span);
+    tagsDiv.appendChild(a);
+  } else {
+    const span = document.createElement("span");
+    span.textContent = displayTag;
+    tagsDiv.appendChild(span);
+  }
+});
       info.appendChild(title);
       info.appendChild(tagsDiv);
       card.appendChild(img);
