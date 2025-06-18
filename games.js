@@ -747,4 +747,52 @@
   "isthereUrl": "https://isthereanydeal.com/game/ys-viii-lacrimosa-of-dana/info/",
   "tags": ["싱글","협동", "액션","RPG", "어드벤처", "판타지", "아직안함"]
 },
+{
+  "name": "PEAK",
+  "thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3527290/31bac6b2eccf09b368f5e95ce510bae2baf3cfcd/header.jpg?t=1750093258",
+  "steamUrl": "https://store.steampowered.com/app/3527290/PEAK/",
+  "isthereUrl": "https://isthereanydeal.com/game/peak/info/",
+  "tags": ["멀티", "어드벤처", "걷기시뮬", "미스터리", "아직안함"]
+},
+{
+  "name": "ASKA",
+  "thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1898300/header.jpg",
+  "steamUrl": "https://store.steampowered.com/app/1898300/ASKA/",
+  "isthereUrl": "https://isthereanydeal.com/game/aska/info/",
+  "tags": ["싱글", "멀티", "생존", "건설", "바이킹", "아직안함"]
+},
+{
+  "name": "Soulmask",
+  "thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/2646460/header.jpg",
+  "steamUrl": "https://store.steampowered.com/app/2646460/Soulmask/",
+  "isthereUrl": "https://isthereanydeal.com/game/soulmask/info/",
+  "tags": ["싱글", "멀티", "생존", "오픈월드", "건설", "아직안함"]
+},
+{
+  "name": "Wobbly Life",
+  "thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1211020/header.jpg",
+  "steamUrl": "https://store.steampowered.com/app/1211020/Wobbly_Life/",
+  "isthereUrl": "https://isthereanydeal.com/game/wobbly-life/info/",
+  "tags": ["멀티", "샌드박스", "코미디", "캐주얼", "아직안함"]
+},
+{
+  "name": "Sword Art Online: Hollow Realization Deluxe Edition",
+  "thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/607890/header.jpg",
+  "steamUrl": "https://store.steampowered.com/app/607890/Sword_Art_Online_Hollow_Realization_Deluxe_Edition/",
+  "isthereUrl": "https://isthereanydeal.com/game/sword-art-online-hollow-realization-deluxe-edition/info/",
+  "tags": ["싱글", "액션 RPG", "애니메이션", "JRPG", "아직안함"]
+},
+{
+  "name": "Go-Go Town!",
+  "thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/2195120/header.jpg",
+  "steamUrl": "https://store.steampowered.com/app/2195120/GoGo_Town/",
+  "isthereUrl": "https://isthereanydeal.com/game/go-go-town/info/",
+  "tags": ["싱글", "멀티", "경영", "건설", "귀여움", "아직안함"]
+},{
+  "name": "Escape Academy",
+  "thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1812090/header.jpg",
+  "steamUrl": "https://store.steampowered.com/app/1812090/Escape_Academy/",
+  "isthereUrl": "https://isthereanydeal.com/game/escapeacademy/info/",
+  "tags": ["멀티", "퍼즐", "협동", "방탈출", "캐주얼", "아직안함"]
+},
 ];
