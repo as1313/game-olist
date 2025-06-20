@@ -3,6 +3,11 @@
 <head>
 <meta charset="UTF-8" />
 <title>게임 피드 + 태그 필터</title>
+<script>
+  if (/Mobi|Android|iPhone|iPad/i.test(navigator.userAgent)) {
+    window.location.href = "game_feed_mobile.html";
+  }
+</script>
 <style>
   body {
     background: #141414;
