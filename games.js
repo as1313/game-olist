@@ -837,4 +837,11 @@
   "isthereUrl": "https://isthereanydeal.com/game/omegacrafter/info/",
   "tags": ["싱글", "멀티", "샌드박스", "생존", "건설", "귀여움", "2025", "아직안함"]
 },
+{
+  "name": "Degrees of Separation",
+  "thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/809880/header.jpg",
+  "steamUrl": "https://store.steampowered.com/app/809880/Degrees_of_Separation/",
+  "isthereUrl": "https://isthereanydeal.com/game/degreesofseparation/info/",
+  "tags": ["멀티", "협동", "퍼즐", "고난이도", "2019", "하는중"]
+},
 ];
