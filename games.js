@@ -654,7 +654,7 @@
   "thumbnail": "https://cdn.cloudflare.steamstatic.com/steam/apps/617290/header.jpg",
   "steamUrl": "https://store.steampowered.com/app/617290/Remnant_From_the_Ashes/",
   "isthereUrl": "https://isthereanydeal.com/game/remnant-from-the-ashes/info/",
-  "tags": ["싱글", "멀티", "협동", "TPS", "액션", "판타지", "고난이도", "아직안함"]
+  "tags": ["싱글", "멀티", "협동", "TPS", "액션", "판타지", "고난이도", "하는중"]
 },
 {
   "name": "Grounded",
@@ -696,7 +696,7 @@
   "thumbnail": "https://cdn.cloudflare.steamstatic.com/steam/apps/2001120/header.jpg",
   "steamUrl": "https://store.steampowered.com/app/2001120/Split_Fiction/",
   "isthereUrl": "https://isthereanydeal.com/game/split-fiction/info/",
-  "tags": ["멀티", "퍼즐", "어드벤처", "협동", "아직안함"]
+  "tags": ["멀티", "퍼즐", "어드벤처", "협동","2025", "아직안함"]
 },
 {
   "name": "Verdun",
@@ -815,5 +815,26 @@
   "steamUrl": "https://store.steampowered.com/app/1649240/Returnal/",
   "isthereUrl": "https://isthereanydeal.com/game/returnal/info/",
   "tags": ["싱글", "멀티", "TPS", "로그라이크", "고난이도", "GOTY", "아직안함"]
+},
+{
+  "name": "FBC: Firebreak",
+  "thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/2272540/header.jpg",
+  "steamUrl": "https://store.steampowered.com/app/2272540/FBC_Firebreak/",
+  "isthereUrl": "https://isthereanydeal.com/game/fbc-firebreak/info/",
+  "tags": ["싱글", "슈팅", "3인칭", "액션", "2025", "아직안함"]
+},
+{
+  "name": "FANTASY LIFE i: 빙글빙글 용과 시간을 훔치는 소녀",
+  "thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/2993780/header.jpg",
+  "steamUrl": "https://store.steampowered.com/app/2993780/FANTASY_LIFE_i/?queue=1",
+  "isthereUrl": "https://isthereanydeal.com/game/fantasylifei/info/",
+  "tags": ["싱글", "RPG", "라이프시뮬", "2025", "아직안함"]
+},
+{
+  "name": "Omega Crafter",
+  "thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/2262080/header.jpg",
+  "steamUrl": "https://store.steampowered.com/app/2262080/Omega_Crafter/",
+  "isthereUrl": "https://isthereanydeal.com/game/omegacrafter/info/",
+  "tags": ["싱글", "멀티", "샌드박스", "생존", "건설", "귀여움", "2025", "아직안함"]
 },
 ];
