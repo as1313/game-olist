@@ -160,11 +160,22 @@ game.tags.forEach(tag => {
     a.target = "_blank";
     const span = document.createElement("span");
     span.textContent = displayTag;
+    span.style.cursor = "pointer";
+    span.title = "유튜브 재생목록 열기";
     a.appendChild(span);
     tagsDiv.appendChild(a);
   } else {
     const span = document.createElement("span");
     span.textContent = displayTag;
+    span.style.cursor = "pointer";
+    span.title = `${tag} 태그로 보기`;
+    span.onclick = () => {
+      selectedTag = tag;
+      Array.from(tagButtons.children).forEach(btn => {
+        btn.classList.toggle("selected", btn.dataset.tag === selectedTag);
+      });
+      renderGames();
+    };
     tagsDiv.appendChild(span);
   }
 });
