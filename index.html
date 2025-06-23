@@ -5,7 +5,7 @@
 <title>게임 피드 + 태그 필터</title>
 <script>
   if (/Mobi|Android|iPhone|iPad/i.test(navigator.userAgent)) {
-    window.location.href = "mobile.html";
+    window.location.href = "game_feed_mobile.html";
   }
 </script>
 <style>
@@ -157,18 +157,30 @@ game.tags.forEach(tag => {
   else if (tag === "하트눈") displayTag = "🥰";
   else if (tag === "노잼") displayTag = "😞";
   else if (tag === "유튜브") displayTag = "▶️";
+  else if (tag === "cmd") displayTag = "💬";
 
   const span = document.createElement("span");
   span.textContent = displayTag;
+  span.style.cursor = "pointer";
 
-  if (tag === "유튜브" && game.youtubePlaylistUrl) {
-    span.style.cursor = "pointer";
+  // 💬 툴팁 지정
+  if (
+    (["하트", "하트눈", "노잼"].includes(tag) && game.cmds && game.cmds[tag])
+  ) {
+    span.title = game.cmds[tag];
+  } else if (tag === "cmd" && game.cmd) {
+    span.title = game.cmd;
+  } else if (tag === "유튜브") {
     span.title = "유튜브 재생목록 열기";
-    span.onclick = () => window.open(game.youtubePlaylistUrl, "_blank");
   } else {
-    // 유튜브 외 태그 클릭 시 필터링 동작 추가
-    span.style.cursor = "pointer";
     span.title = `${tag} 태그로 필터링`;
+  }
+
+  // 유튜브 링크 열기
+  if (tag === "유튜브" && game.youtubePlaylistUrl) {
+    span.onclick = () => window.open(game.youtubePlaylistUrl, "_blank");
+  } else if (tag !== "cmd") {
+    // 일반 필터 태그 (cmd 제외)
     span.onclick = () => {
       if (selectedTags.includes(tag)) {
         selectedTags = selectedTags.filter(t => t !== tag);
