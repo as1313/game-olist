@@ -153,6 +153,7 @@ game.tags.forEach(tag => {
   else if (tag === "하트눈") displayTag = "🥰";
   else if (tag === "노잼") displayTag = "😞";
   else if (tag === "유튜브") displayTag = "▶️";
+  else if (tag === "cmd") displayTag = "💬";
 
   if (tag === "유튜브" && game.youtubePlaylistUrl) {
     const a = document.createElement("a");
@@ -168,7 +169,20 @@ game.tags.forEach(tag => {
     const span = document.createElement("span");
     span.textContent = displayTag;
     span.style.cursor = "pointer";
-    span.title = `${tag} 태그로 보기`;
+
+    // 🧠 태그별 코멘트 툴팁 표시
+    if (
+      ["하트", "하트눈", "노잼"].includes(tag) &&
+      game.cmds && game.cmds[tag]
+    ) {
+      span.title = game.cmds[tag];
+    } else if (tag === "cmd" && game.cmd) {
+      span.title = game.cmd;
+    } else {
+      span.title = `${tag} 태그로 보기`;
+    }
+
+    // 유튜브 외 태그 클릭 시 필터링
     span.onclick = () => {
       selectedTag = tag;
       Array.from(tagButtons.children).forEach(btn => {
@@ -176,6 +190,7 @@ game.tags.forEach(tag => {
       });
       renderGames();
     };
+
     tagsDiv.appendChild(span);
   }
 });
