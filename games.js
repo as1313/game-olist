@@ -4,132 +4,159 @@
       steamUrl: "https://store.steampowered.com/app/8870/BioShock_Infinite/",
       isthereUrl: "https://isthereanydeal.com/game/bioshock-infinite/info/",
       thumbnail: "https://cdn.cloudflare.steamstatic.com/steam/apps/8870/header.jpg",
-      tags: ["싱글","RPG","클리어","하트"]
-    },
+      tags: ["싱글","RPG","2013","클리어","하트"],
+  cmds: {
+    "하트": "예쁜그래픽,반전스토리"
+  }
+
+},
     {
-      name: "포탈2",
+      name: "Portal 2",
       steamUrl: "https://store.steampowered.com/app/620/Portal_2/",
       isthereUrl: "https://isthereanydeal.com/game/portal-2/info/",
       thumbnail: "https://cdn.cloudflare.steamstatic.com/steam/apps/620/header.jpg",
-      tags: ["멀티","협동","퍼즐","GOTY" ,"클리어"]
+      tags: ["멀티","협동","2011","퍼즐","GOTY","cmd","클리어"],
+      cmd: "3D멀미 생길수있음"
     },
     {
       name: "It Takes Two",
       steamUrl: "https://store.steampowered.com/app/1426210/It_Takes_Two/",
       isthereUrl: "https://isthereanydeal.com/game/it-takes-two/info/",
       thumbnail: "https://cdn.cloudflare.steamstatic.com/steam/apps/1426210/header.jpg",
-      tags: ["멀티","협동","클리어","하트눈","유튜브"],
+      tags: ["멀티","협동","클리어","2021","하트눈","유튜브"],
       youtubePlaylistUrl: "https://www.youtube.com/playlist?list=PLtgtY3ehtJpXDxm54AdS5R6NnRaCG_pCW"
     },
     {
-      name: "리스크 오브 레인 2",
+      name: "Risk of Rain 2",
       steamUrl: "https://store.steampowered.com/app/632360/Risk_of_Rain_2/",
       isthereUrl: "https://isthereanydeal.com/game/risk-of-rain-2/info/",
       thumbnail: "https://cdn.cloudflare.steamstatic.com/steam/apps/632360/header.jpg",
-      tags: ["멀티","협동","TPS","클리어","하트","유튜브"],
-      youtubePlaylistUrl: "https://www.youtube.com/playlist?list=PLtgtY3ehtJpVeRlCpRVGjTgne0PUda9n8"
+      tags: ["멀티","협동","TPS","2020","클리어","하트","유튜브"],
+      youtubePlaylistUrl: "https://www.youtube.com/playlist?list=PLtgtY3ehtJpVeRlCpRVGjTgne0PUda9n8",
+  cmds: {
+    "하트": "FPS로그라이크중 젤 잼남"
+  }
     },
     {
-      name: "쓰론브레이커",
+      name: "Thronebreaker: The Witcher Tales",
       steamUrl: "https://store.steampowered.com/app/973760/Thronebreaker_The_Witcher_Tales/",
       isthereUrl: "https://isthereanydeal.com/game/thronebreaker-the-witcher-tales/info/",
       thumbnail: "https://cdn.cloudflare.steamstatic.com/steam/apps/973760/header.jpg",
-      tags: ["싱글","퍼즐","클리어","하트","유튜브"],
-      youtubePlaylistUrl: "https://www.youtube.com/playlist?list=PLtgtY3ehtJpU2iUiS8UyStUKpSuCb8oH0"
+      tags: ["싱글","퍼즐","2018","클리어","하트","유튜브"],
+      youtubePlaylistUrl: "https://www.youtube.com/playlist?list=PLtgtY3ehtJpU2iUiS8UyStUKpSuCb8oH0",
+  cmds: {
+    "하트": "위쳐3보다 내 취향, 단숨에 다깸"
+  }
     },
     {
       name: "Gears 5",
       steamUrl: "https://store.steampowered.com/app/1097840/Gears_5/",
       isthereUrl: "https://isthereanydeal.com/game/gears-5/info/",
       thumbnail: "https://cdn.cloudflare.steamstatic.com/steam/apps/1097840/header.jpg",
-      tags: ["멀티","협동","TPS","하트","클리어","유튜브"],
-      youtubePlaylistUrl: "https://www.youtube.com/playlist?list=PLtgtY3ehtJpWqWT3OAIS-Wwf00ChWgOFm"
+      tags: ["멀티","협동","TPS","2019","하트","클리어","유튜브"],
+      youtubePlaylistUrl: "https://www.youtube.com/playlist?list=PLtgtY3ehtJpWqWT3OAIS-Wwf00ChWgOFm",
+  cmds: {
+    "하트": "다른 기어스 시리즈도 스팀에 나와라"
+  }
     },
     {
-      name: "드래곤즈 도그마",
+      name: "Dragon's Dogma Dark Arisen",
       steamUrl: "https://store.steampowered.com/app/367500/Dragons_Dogma_Dark_Arisen/",
       isthereUrl: "https://isthereanydeal.com/game/dragons-dogma-dark-arisen/info/",
       thumbnail: "https://cdn.cloudflare.steamstatic.com/steam/apps/367500/header.jpg",
-      tags: ["싱글","RPG","클리어","노잼","유튜브"],
-      youtubePlaylistUrl: "https://www.youtube.com/playlist?list=PLtgtY3ehtJpURxCJmGquoyZ9LnSPhp_3E"
+      tags: ["싱글","RPG","2016","클리어","노잼","유튜브"],
+      youtubePlaylistUrl: "https://www.youtube.com/playlist?list=PLtgtY3ehtJpURxCJmGquoyZ9LnSPhp_3E",
+  cmds: {"노잼": "구식알피지,1해보고 2망할거 미리알고 스팀평가함"}
     },
     {
-      name: "오버쿡 2",
+      name: "Overcooked! 2",
       steamUrl: "https://store.steampowered.com/app/728880/Overcooked_2/",
       isthereUrl: "https://isthereanydeal.com/game/overcooked-2/info/",
       thumbnail: "https://cdn.cloudflare.steamstatic.com/steam/apps/728880/header.jpg",
-      tags: ["멀티","협동","요리","클리어","하트","유튜브"],
-      youtubePlaylistUrl: "https://www.youtube.com/playlist?list=PLtgtY3ehtJpUmdbQcblMNIUQ1xVIjGhCq"
+      tags: ["멀티","협동","요리","2018","클리어","하트","유튜브"],
+      youtubePlaylistUrl: "https://www.youtube.com/playlist?list=PLtgtY3ehtJpUmdbQcblMNIUQ1xVIjGhCq",
+  cmds: {
+    "하트": "오버쿡류라는 말이 괜히 나온게 아니에요"
+  }
     },
     {
-      name: "심포니 오브 워",
+      name: "Symphony of War: The Nephilim Saga",
       steamUrl: "https://store.steampowered.com/app/1488200/Symphony_of_War_The_Nephilim_Saga/",
       isthereUrl: "https://isthereanydeal.com/game/symphony-of-war-the-nephilim-saga/info/",
       thumbnail: "https://cdn.cloudflare.steamstatic.com/steam/apps/1488200/header.jpg",
-      tags: ["싱글","전략","클리어","유튜브"],
+      tags: ["싱글","전략","2022","클리어","유튜브"],
       youtubePlaylistUrl: "https://www.youtube.com/playlist?list=PLtgtY3ehtJpV5m7YRd9f-nK_TxTHLdPVD"
     },
     {
-      name: "트라인 4",
+      name: "Trine 4: The Nightmare Prince",
       steamUrl: "https://store.steampowered.com/app/690640/Trine_4_The_Nightmare_Prince/",
       isthereUrl: "https://isthereanydeal.com/game/trine-4-the-nightmare-prince/info/",
       thumbnail: "https://cdn.cloudflare.steamstatic.com/steam/apps/690640/header.jpg",
-      tags: ["싱글","협동","클리어","하트","유튜브"],
+      tags: ["싱글","협동","2019","클리어","하트","유튜브"],
       youtubePlaylistUrl: "https://www.youtube.com/playlist?list=PLtgtY3ehtJpVydwi06qY7qeRNiiOhdxd_"
     },
     {
-      name: "어 햇 인 타임",
+      name: "A Hat in Time",
       steamUrl: "https://store.steampowered.com/app/253230/A_Hat_in_Time/",
       isthereUrl: "https://isthereanydeal.com/game/a-hat-in-time/info/",
       thumbnail: "https://cdn.cloudflare.steamstatic.com/steam/apps/253230/header.jpg",
-      tags: ["멀티","클리어","귀여움","하트눈","유튜브"],
-      youtubePlaylistUrl: "https://www.youtube.com/playlist?list=PLtgtY3ehtJpXpRxGKmfU_B4vHVcELtW5h"
+      tags: ["멀티","클리어","귀여움","2017","하트눈","유튜브"],
+      youtubePlaylistUrl: "https://www.youtube.com/playlist?list=PLtgtY3ehtJpXpRxGKmfU_B4vHVcELtW5h",
+  cmds: {
+    "하트눈": "귀여운 모자걸"
+  }
     },
     {
-    name: "무빙 아웃",
+    name: "Moving Out",
     steamUrl: "https://store.steampowered.com/app/996770/Moving_Out/",
     isthereUrl: "https://isthereanydeal.com/game/moving-out/info/",
     thumbnail: "https://cdn.cloudflare.steamstatic.com/steam/apps/996770/header.jpg",
-    tags: ["멀티", "협동","클리어","하트","유튜브"],
+    tags: ["멀티", "협동","2020","클리어","하트","유튜브"],
       youtubePlaylistUrl: "https://www.youtube.com/playlist?list=PLtgtY3ehtJpVvlavssEugaRQNyBup8noh"
     },
     {
-    name: "무빙 아웃 2",
+    name: "Moving Out 2",
     steamUrl: "https://store.steampowered.com/app/1641700/Moving_Out_2/",
     isthereUrl: "https://isthereanydeal.com/game/moving-out-2/info/",
     thumbnail: "https://cdn.cloudflare.steamstatic.com/steam/apps/1641700/header.jpg",
-    tags: ["멀티", "협동","하트","클리어","유튜브"],
-      youtubePlaylistUrl: "https://www.youtube.com/playlist?list=PLtgtY3ehtJpWlIA6VtB3GAUhSCToX3uOQ"
+    tags: ["멀티", "협동","2023","하트","클리어","유튜브"],
+      youtubePlaylistUrl: "https://www.youtube.com/playlist?list=PLtgtY3ehtJpWlIA6VtB3GAUhSCToX3uOQ",
+  cmds: {
+    "하트": "1보다 발전함!"
+  }
     },
     {
-    name: "트라인 5",
+    name: "Trine 5: A Clockwork Conspiracy",
     steamUrl: "https://store.steampowered.com/app/1436700/Trine_5_A_Clockwork_Conspiracy/",
     isthereUrl: "https://isthereanydeal.com/game/trine-5-a-clockwork-conspiracy/info/",
     thumbnail: "https://cdn.cloudflare.steamstatic.com/steam/apps/1436700/header.jpg",
-    tags: ["멀티", "협동", "클리어", "하트","유튜브"],
-      youtubePlaylistUrl: "https://www.youtube.com/playlist?list=PLtgtY3ehtJpV8zVk9DJsfIIiZqIt3Fy6f"
+    tags: ["멀티", "협동","2023", "클리어", "하트","유튜브"],
+      youtubePlaylistUrl: "https://www.youtube.com/playlist?list=PLtgtY3ehtJpV8zVk9DJsfIIiZqIt3Fy6f",
+  cmds: {
+    "하트": "4보다 발전함!"
+  }
     },
     {
-      name: "어 웨이 아웃",
+      name: "A Way Out",
       steamUrl: "https://store.steampowered.com/app/1222700/A_Way_Out/",
       isthereUrl: "https://isthereanydeal.com/game/a-way-out/info/",
       thumbnail: "https://cdn.cloudflare.steamstatic.com/steam/apps/1222700/header.jpg",
-      tags: ["멀티","협동","클리어","하트"]
+      tags: ["멀티","협동","2018","클리어","하트"]
     },
     {
-    name: "저니 투 더 새비지 플래닛",
+    name: "Journey To The Savage Planet / 저니 투 더 새비지 플래닛",
     steamUrl: "https://store.steampowered.com/app/973810/_____Journey_To_The_Savage_Planet/",
     isthereUrl: "https://isthereanydeal.com/game/journey-to-the-savage-planet/info/",
     thumbnail: "https://cdn.cloudflare.steamstatic.com/steam/apps/973810/header.jpg",
-    tags: ["멀티", "클리어","하트","유튜브"],
+    tags: ["멀티","탐험","어드벤처","2021", "클리어","하트","유튜브"],
       youtubePlaylistUrl: "https://www.youtube.com/playlist?list=PLtgtY3ehtJpUEaw5b0A4K1zYdBcTVB8Nk"
     },
     {
-      name: "바이패드",
+      name: "Biped",
       steamUrl: "https://store.steampowered.com/app/1071870/Biped/",
       isthereUrl: "https://isthereanydeal.com/game/biped/info/",
       thumbnail: "https://cdn.cloudflare.steamstatic.com/steam/apps/1071870/header.jpg",
-      tags: ["멀티","협동","유튜브"],
+      tags: ["멀티","협동","2020","유튜브"],
       youtubePlaylistUrl: "https://www.youtube.com/playlist?list=PLtgtY3ehtJpVk1Sro1Bp-9NSnCubZ7Bv2"
     },
     {
