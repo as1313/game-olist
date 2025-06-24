@@ -894,6 +894,26 @@
   thumbnail: "https://cdn.cloudflare.steamstatic.com/steam/apps/312660/header.jpg",
   steamUrl: "https://store.steampowered.com/app/312660/Sniper_Elite_4/",
   isthereUrl: "https://isthereanydeal.com/game/sniper-elite-4/info/",
-  tags: ["싱글", "멀티", "TPS", "슈팅", "전쟁", "은신", "2017", "아직안함"]
+  tags: ["싱글", "멀티", "TPS", "저격", "전쟁", "잠입", "2017", "아직안함"]
+},
+{
+  name: "Sniper Elite 3",
+  thumbnail: "https://cdn.cloudflare.steamstatic.com/steam/apps/238090/header.jpg",
+  steamUrl: "https://store.steampowered.com/app/238090/Sniper_Elite_3/",
+  isthereUrl: "https://isthereanydeal.com/game/sniper-elite-3/info/",
+  tags: ["싱글", "멀티", "저격", "TPS", "잠입", "전쟁", "2014", "아직안함"]
+},{
+  name: "LEGO Fortnite Brick Life",
+  thumbnail: "https://i.ytimg.com/vi/ZOXvkjAtT5U/maxresdefault.jpg",
+  steamUrl: "https://store.epicgames.com/p/fortnite--lego-brick-life",
+  isthereUrl: "",
+  tags: ["멀티", "생활", "역할놀이", "오픈월드", "건설", "2024", "아직안함"]
+},
+{
+  name: "Halo: The Master Chief Collection",
+  thumbnail: "https://cdn.cloudflare.steamstatic.com/steam/apps/976730/header.jpg",
+  steamUrl: "https://store.steampowered.com/app/976730/Halo_The_Master_Chief_Collection/",
+  isthereUrl: "https://isthereanydeal.com/game/halo-the-master-chief-collection/info/",
+  tags: ["싱글", "멀티", "슈터", "액션", "SF", "스토리", "2019", "아직안함"]
 },
 ];
