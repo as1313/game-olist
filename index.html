@@ -138,14 +138,20 @@
       info.className = "info";
 
       // 게임 이름 (isthereanydeal 링크)
-      const h3 = document.createElement("h3");
-      const a = document.createElement("a");
-      a.href = game.isthereUrl;
-      a.target = "_blank";
-      a.rel = "noopener noreferrer";
-      a.textContent = game.name;
-      h3.appendChild(a);
-      info.appendChild(h3);
+const h3 = document.createElement("h3");
+const a = document.createElement("a");
+a.href = game.isthereUrl;
+a.target = "_blank";
+a.rel = "noopener noreferrer";
+a.textContent = game.name;
+h3.appendChild(a);
+
+// 🎯 여기에 조건부 폰트 크기 조절
+if (game.name.length > 35) {
+  h3.style.fontSize = "0.9em";
+}
+
+info.appendChild(h3);
 
       // 태그 영역
       const tagsDiv = document.createElement("div");
