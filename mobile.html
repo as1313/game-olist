@@ -139,12 +139,17 @@
       img.onclick = () => window.open(game.steamUrl, "_blank");
       const info = document.createElement("div");
       info.className = "info";
-      const title = document.createElement("h3");
-      const link = document.createElement("a");
-      link.href = game.isthereUrl;
-      link.target = "_blank";
-      link.textContent = game.name;
-      title.appendChild(link);
+const title = document.createElement("h3");
+const link = document.createElement("a");
+link.href = game.isthereUrl;
+link.target = "_blank";
+link.textContent = game.name;
+title.appendChild(link);
+
+// ⬇️ 이 한 줄 추가!
+if (game.name.length > 40) {
+  title.style.fontSize = "0.85em";
+}
       const tagsDiv = document.createElement("div");
       tagsDiv.className = "tags";
 game.tags.forEach(tag => {
