@@ -226,7 +226,7 @@
   steamUrl: "https://store.steampowered.com/app/49520/Borderlands_2/",
   isthereUrl: "https://isthereanydeal.com/game/borderlands-2/info/",
   thumbnail: "https://cdn.cloudflare.steamstatic.com/steam/apps/49520/header.jpg",
-  tags: ["멀티", "협동", "액션", "FPS", "RPG","2012", "루터슈터","아직안함"]
+  tags: ["멀티", "협동", "액션", "FPS", "RPG","2012","GOTY", "루터슈터","아직안함"]
 },
 {
   name: "POPUCOM / 팝유컴",
@@ -687,7 +687,10 @@
   "thumbnail": "https://cdn.cloudflare.steamstatic.com/steam/apps/2408820/header.jpg",
   "steamUrl": "https://store.steampowered.com/app/2408820/_/",
   "isthereUrl": "https://isthereanydeal.com/game/luma-island/info/",
-  "tags": ["멀티", "생활", "귀여움","2024", "캐주얼", "탐험"]
+  "tags": ["멀티", "생활", "귀여움","2024","하트", "캐주얼", "탐험", "유튜브"],
+  "youtubePlaylistUrl": "https://www.youtube.com/playlist?list=PLtgtY3ehtJpWpw7xm0tfKmKUNAbzFMEk3",
+  cmds: {
+    "하트": "씰룩씰룩"}
 },
 {
   "name": "Remnant: From the Ashes",
@@ -916,4 +919,135 @@
   isthereUrl: "https://isthereanydeal.com/game/halo-the-master-chief-collection/info/",
   tags: ["싱글", "멀티", "슈터", "액션", "SF", "스토리", "2019", "아직안함"]
 },
+{
+  name: "Toodee and Topdee",
+  thumbnail: "https://cdn.cloudflare.steamstatic.com/steam/apps/1303950/header.jpg",
+  steamUrl: "https://store.steampowered.com/app/1303950/Toodee_and_Topdee/",
+  isthereUrl: "https://isthereanydeal.com/game/toodee-and-topdee/info/",
+  tags: ["멀티", "퍼즐", "2021","하트", "클리어", "유튜브"],
+  youtubePlaylistUrl: "https://www.youtube.com/playlist?list=PLtgtY3ehtJpVCXMXTYBX9dda-4ah82zg3"
+},
+{
+  name: "Aragami 2",
+  thumbnail: "https://cdn.cloudflare.steamstatic.com/steam/apps/1158370/header.jpg",
+  steamUrl: "https://store.steampowered.com/app/1158370/Aragami_2/",
+  isthereUrl: "https://isthereanydeal.com/game/aragami-2/info/",
+  tags: ["싱글", "멀티", "은신", "닌자", "암살", "액션", "협동", "2021", "아직안함"]
+},
+{
+  name: "Darksiders Genesis",
+  thumbnail: "https://cdn.cloudflare.steamstatic.com/steam/apps/710920/header.jpg",
+  steamUrl: "https://store.steampowered.com/app/710920/Darksiders_Genesis/",
+  isthereUrl: "https://isthereanydeal.com/game/darksiders-genesis/info/",
+  tags: ["싱글", "멀티", "액션", "어드벤처", "협동", "판타지", "2019", "아직안함"]
+},
+{
+  name: "The Last Oricru – Final Cut",
+  thumbnail: "https://cdn.cloudflare.steamstatic.com/steam/apps/1663640/header.jpg",
+  steamUrl: "https://store.steampowered.com/app/1663640/The_Last_Oricru__Final_Cut/",
+  isthereUrl: "https://isthereanydeal.com/game/the-last-oricru-final-cut/info/",
+  tags: ["싱글", "멀티", "액션 RPG", "판타지", "은신", "협동", "스토리", "2022", "아직안함"]
+},
+{
+  name: "Wuppo: Definitive Edition",
+  thumbnail: "https://cdn.cloudflare.steamstatic.com/steam/apps/400630/header.jpg",
+  steamUrl: "https://store.steampowered.com/app/400630/Wuppo_Definitive_Edition/",
+  isthereUrl: "https://isthereanydeal.com/game/wuppo-definitive-edition/info/",
+  tags: ["싱글", "멀티", "메트로배니아","탐험", "퍼즐", "하트", "2016", "아직안함"],
+  cmds: {
+    "하트": "❤️❤️❤️"
+  }
+},
+{
+  name: "Lords of the Fallen",
+  thumbnail: "https://cdn.cloudflare.steamstatic.com/steam/apps/1501750/header.jpg",
+  steamUrl: "https://store.steampowered.com/app/1501750/Lords_of_the_Fallen/",
+  isthereUrl: "https://isthereanydeal.com/game/lords-of-the-fallen/info/",
+  tags: ["싱글", "멀티", "소울라이크", "다크판타지", "2023", "아직안함"]
+},
+{
+  name: "No Man’s Sky",
+  thumbnail: "https://cdn.cloudflare.steamstatic.com/steam/apps/275850/header.jpg",
+  steamUrl: "https://store.steampowered.com/app/275850/No_Mans_Sky/",
+  isthereUrl: "https://isthereanydeal.com/game/no-mans-sky/info/",
+  tags: ["멀티", "탐험", "생존", "오픈월드", "액션", "SF", "스토리","2016", "아직안함"]
+},{
+  name: "Kena: Bridge of Spirits",
+  thumbnail: "https://cdn.cloudflare.steamstatic.com/steam/apps/1954200/header.jpg",
+  steamUrl: "https://store.steampowered.com/app/1954200/Kena_Bridge_of_Spirits/",
+  isthereUrl: "https://isthereanydeal.com/game/kena-bridge-of-spirits/info/",
+  tags: ["싱글", "액션", "어드벤처", "탐험", "스토리","2022", "아직안함"]
+},
+{
+  name: "Asterigos: Curse of the Stars",
+  thumbnail: "https://cdn.akamai.steamstatic.com/steam/apps/1731070/header.jpg",
+  steamUrl: "https://store.steampowered.com/app/1731070/Asterigos_Curse_of_the_Stars/",
+  isthereUrl: "https://isthereanydeal.com/game/asterigos-curse-of-the-stars/info/",
+  tags: ["싱글", "액션", "RPG", "소울라이크", "탐험", "2022", "아직안함"]
+},
+{
+  name: "Paleo Pines",
+  thumbnail: "https://cdn.akamai.steamstatic.com/steam/apps/1202200/header.jpg",
+  steamUrl: "https://store.steampowered.com/app/1202200/Paleo_Pines/",
+  isthereUrl: "https://isthereanydeal.com/game/paleo-pines/info/",
+  tags: ["싱글", "공룡", "귀여움", "시뮬레이션", "탐험", "2023"]
+},
+{
+  name: "Haven",
+  thumbnail: "https://cdn.cloudflare.steamstatic.com/steam/apps/983970/header.jpg",
+  steamUrl: "https://store.steampowered.com/app/983970/Haven/",
+  isthereUrl: "https://isthereanydeal.com/game/haven/info/",
+  tags: ["멀티", "RPG", "어드벤처", "스토리", "탐험", "2020", "아직안함"]
+},
+{
+  name: "The Wild at Heart",
+  thumbnail: "https://cdn.cloudflare.steamstatic.com/steam/apps/1093290/header.jpg",
+  steamUrl: "https://store.steampowered.com/app/1093290/The_Wild_at_Heart/",
+  isthereUrl: "https://isthereanydeal.com/game/the-wild-at-heart/info/",
+  tags: ["싱글", "퍼즐", "어드벤처", "스토리", "탐험", "2021", "아직안함"]
+},
+{
+  name: "Ages of Mages: The Last Keeper",
+  thumbnail: "https://cdn.cloudflare.steamstatic.com/steam/apps/820610/header.jpg",
+  steamUrl: "https://store.steampowered.com/app/820610/Ages_of_Mages_The_last_keeper/",
+  isthereUrl: "https://isthereanydeal.com/game/ages-of-mages-the-last-keeper/info/",
+  tags: ["멀티", "액션","캐주얼", "인디", "2019", "아직안함"]
+},
+{
+  name: "Heave Ho",
+  thumbnail: "https://cdn.cloudflare.steamstatic.com/steam/apps/905340/header.jpg",
+  steamUrl: "https://store.steampowered.com/app/905340/Heave_Ho/",
+  isthereUrl: "https://isthereanydeal.com/game/heave-ho/info/",
+  tags: ["멀티", "협동", "유머", "2019", "아직안함"]
+},
+{
+  name: "OUTRIDERS",
+  thumbnail: "https://cdn.cloudflare.steamstatic.com/steam/apps/680420/header.jpg",
+  steamUrl: "https://store.steampowered.com/app/680420/OUTRIDERS/",
+  isthereUrl: "https://isthereanydeal.com/game/outriders/info/",
+  tags: [
+    "싱글","멀티", "슈터","TPS" ,"SF", "2021", "아직안함"
+  ]
+},
+{
+  name: "Diner Bros",
+  thumbnail: "https://cdn.cloudflare.steamstatic.com/steam/apps/846800/header.jpg",
+  steamUrl: "https://store.steampowered.com/app/846800/Diner_Bros/",
+  isthereUrl: "https://isthereanydeal.com/game/diner-bros/info/",
+  tags: ["멀티", "요리", "협동", "2018", "아직안함"]
+},
+{
+  name: "Raft",
+  thumbnail: "https://cdn.cloudflare.steamstatic.com/steam/apps/648800/header.jpg",
+  steamUrl: "https://store.steampowered.com/app/648800/Raft/",
+  isthereUrl: "https://isthereanydeal.com/game/raft/info/",
+  tags: ["멀티", "생존", "오픈월드","탐험", "기지건설", "2022", "아직안함"]
+},
+{
+  name: "Scrap Mechanic",
+  thumbnail: "https://cdn.cloudflare.steamstatic.com/steam/apps/387990/header.jpg",
+  steamUrl: "https://store.steampowered.com/app/387990/Scrap_Mechanic/",
+  isthereUrl: "https://isthereanydeal.com/game/scrap-mechanic/info/",
+  tags: ["싱글", "멀티", "건설", "크래프트", "탐험", "2024", "아직안함"]
+}
 ];
