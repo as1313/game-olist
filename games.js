@@ -1,6 +1,6 @@
   const games = [
     {
-      name: "바이오쇼크 인피니트",
+      name: "Bioshock Infinite / 바이오쇼크 인피니트",
       steamUrl: "https://store.steampowered.com/app/8870/BioShock_Infinite/",
       isthereUrl: "https://isthereanydeal.com/game/bioshock-infinite/info/",
       thumbnail: "https://cdn.cloudflare.steamstatic.com/steam/apps/8870/header.jpg",
@@ -72,7 +72,7 @@
       steamUrl: "https://store.steampowered.com/app/728880/Overcooked_2/",
       isthereUrl: "https://isthereanydeal.com/game/overcooked-2/info/",
       thumbnail: "https://cdn.cloudflare.steamstatic.com/steam/apps/728880/header.jpg",
-      tags: ["멀티","협동","요리","2018","클리어","하트","유튜브"],
+      tags: ["멀티","협동","요리","2018","캐주얼","클리어","하트","유튜브"],
       youtubePlaylistUrl: "https://www.youtube.com/playlist?list=PLtgtY3ehtJpUmdbQcblMNIUQ1xVIjGhCq",
   cmds: {
     "하트": "오버쿡류라는 말이 괜히 나온게 아니에요"
@@ -110,7 +110,7 @@
     steamUrl: "https://store.steampowered.com/app/996770/Moving_Out/",
     isthereUrl: "https://isthereanydeal.com/game/moving-out/info/",
     thumbnail: "https://cdn.cloudflare.steamstatic.com/steam/apps/996770/header.jpg",
-    tags: ["멀티", "협동","2020","클리어","하트","유튜브"],
+    tags: ["멀티", "협동","2020","클리어","캐주얼","하트","유튜브"],
       youtubePlaylistUrl: "https://www.youtube.com/playlist?list=PLtgtY3ehtJpVvlavssEugaRQNyBup8noh"
     },
     {
@@ -118,7 +118,7 @@
     steamUrl: "https://store.steampowered.com/app/1641700/Moving_Out_2/",
     isthereUrl: "https://isthereanydeal.com/game/moving-out-2/info/",
     thumbnail: "https://cdn.cloudflare.steamstatic.com/steam/apps/1641700/header.jpg",
-    tags: ["멀티", "협동","2023","하트","클리어","유튜브"],
+    tags: ["멀티", "협동","2023","캐주얼","하트","클리어","유튜브"],
       youtubePlaylistUrl: "https://www.youtube.com/playlist?list=PLtgtY3ehtJpWlIA6VtB3GAUhSCToX3uOQ",
   cmds: {
     "하트": "1보다 발전함!"
@@ -195,7 +195,9 @@
       isthereUrl: "https://isthereanydeal.com/game/rescue-party-live/info/",
       thumbnail: "https://cdn.cloudflare.steamstatic.com/steam/apps/1662570/header.jpg",
       tags: ["멀티","협동","2022","클리어","하트","유튜브"],
-      youtubePlaylistUrl: "https://www.youtube.com/playlist?list=PLtgtY3ehtJpUsrkUk0oIiwt6lGuQKAhbb"
+      youtubePlaylistUrl: "https://www.youtube.com/playlist?list=PLtgtY3ehtJpUsrkUk0oIiwt6lGuQKAhbb",
+  cmds: {
+    "하트": "다양하게 잼남!"}
     },
     {
       name: "Fling to the Finish / 우당탕탕 경주",
@@ -697,8 +699,9 @@
   "thumbnail": "https://cdn.cloudflare.steamstatic.com/steam/apps/617290/header.jpg",
   "steamUrl": "https://store.steampowered.com/app/617290/Remnant_From_the_Ashes/",
   "isthereUrl": "https://isthereanydeal.com/game/remnant-from-the-ashes/info/",
-  "tags": ["싱글", "멀티", "협동", "TPS", "액션","2019", "판타지", "고난이도", "유튜브"],
-  "youtubePlaylistUrl": "https://www.youtube.com/playlist?list=PLtgtY3ehtJpXYJMQuWjVo8GJw22z92E8J"
+  "tags": ["싱글", "멀티", "협동", "TPS", "cmd", "2019", "판타지", "고난이도", "유튜브"],
+  "youtubePlaylistUrl": "https://www.youtube.com/playlist?list=PLtgtY3ehtJpXYJMQuWjVo8GJw22z92E8J",
+  "cmd": "혼자 하니 재미없음"
 },
 {
   "name": "Grounded",
@@ -869,7 +872,7 @@
   "thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/2272540/header.jpg",
   "steamUrl": "https://store.steampowered.com/app/2272540/FBC_Firebreak/",
   "isthereUrl": "https://isthereanydeal.com/game/fbc-firebreak/info/",
-  "tags": ["싱글", "슈팅", "3인칭", "액션", "2025", "아직안함"]
+  "tags": ["싱글", "슈팅","FPS","액션", "2025", "아직안함"]
 },
 {
   "name": "FANTASY LIFE i: 빙글빙글 용과 시간을 훔치는 소녀",
@@ -918,14 +921,6 @@
   steamUrl: "https://store.steampowered.com/app/976730/Halo_The_Master_Chief_Collection/",
   isthereUrl: "https://isthereanydeal.com/game/halo-the-master-chief-collection/info/",
   tags: ["싱글", "멀티", "슈터", "액션", "SF", "스토리", "2019", "아직안함"]
-},
-{
-  name: "Toodee and Topdee",
-  thumbnail: "https://cdn.cloudflare.steamstatic.com/steam/apps/1303950/header.jpg",
-  steamUrl: "https://store.steampowered.com/app/1303950/Toodee_and_Topdee/",
-  isthereUrl: "https://isthereanydeal.com/game/toodee-and-topdee/info/",
-  tags: ["멀티", "퍼즐", "2021","하트", "클리어", "유튜브"],
-  youtubePlaylistUrl: "https://www.youtube.com/playlist?list=PLtgtY3ehtJpVCXMXTYBX9dda-4ah82zg3"
 },
 {
   name: "Aragami 2",
@@ -1049,5 +1044,81 @@
   steamUrl: "https://store.steampowered.com/app/387990/Scrap_Mechanic/",
   isthereUrl: "https://isthereanydeal.com/game/scrap-mechanic/info/",
   tags: ["싱글", "멀티", "건설", "크래프트", "탐험", "2024", "아직안함"]
-}
+},
+{
+  name: "Crime Boss: Rockay City",
+  thumbnail: "https://cdn.cloudflare.steamstatic.com/steam/apps/2933080/header.jpg",
+  steamUrl: "https://store.steampowered.com/app/2933080/Crime_Boss_Rockay_City/",
+  isthereUrl: "https://isthereanydeal.com/game/crime-boss-rockay-city/info/",
+  tags: ["멀티","액션", "2024", "유튜브", "노잼"],
+  youtubePlaylistUrl: "https://www.youtube.com/playlist?list=PLtgtY3ehtJpXX0FTFYyvXVLnWF43hzAQf",
+  cmds: {
+    "노잼": "너어무 반복미션이에요"
+  }
+},
+{
+  "name": "SUPER CRAZY RHYTHM CASTLE",
+  "thumbnail": "https://cdn.cloudflare.steamstatic.com/steam/apps/1812560/header.jpg",
+  "steamUrl": "https://store.steampowered.com/app/1812560/SUPER_CRAZY_RHYTHM_CASTLE/",
+  "isthereUrl": "https://isthereanydeal.com/game/super-crazy-rhythm-castle/info/",
+  "tags": ["싱글", "멀티", "협동", "음악", "리듬", "코미디", "2023", "유튜브", "cmd"],
+  "youtubePlaylistUrl": "https://www.youtube.com/playlist?list=PLtgtY3ehtJpXbyHC7M9yUNg7W3aiPzTkK",
+  "cmd": "게임이 정신사나움"
+},{
+  "name": "XCOM® 2",
+  "thumbnail": "https://cdn.cloudflare.steamstatic.com/steam/apps/268500/header.jpg",
+  "steamUrl": "https://store.steampowered.com/app/268500/XCOM_2/",
+  "isthereUrl": "https://isthereanydeal.com/game/xcom-2/info/",
+  "tags": ["싱글", "전략", "턴제", "SF", "2016", "아직안함"]
+},
+{
+  "name": "FORCED: Slightly Better Edition",
+  "thumbnail": "https://cdn.cloudflare.steamstatic.com/steam/apps/249990/header.jpg",
+  "steamUrl": "https://store.steampowered.com/app/249990/FORCED_Slightly_Better_Edition/",
+  "isthereUrl": "https://isthereanydeal.com/game/forced-slightly-better-edition/info/",
+  "tags": ["싱글", "멀티", "협동", "액션", "RPG", "퍼즐", "2014", "아직안함"]
+},
+{
+  "name": "Catastronauts",
+  "thumbnail": "https://cdn.cloudflare.steamstatic.com/steam/apps/737890/header.jpg",
+  "steamUrl": "https://store.steampowered.com/app/737890/Catastronauts/",
+  "isthereUrl": "https://isthereanydeal.com/game/catastronauts/info/",
+  "tags": ["멀티", "협동", "캐주얼", "SF", "2018", "아직안함"]
+},
+{
+  "name": "Very Very Valet",
+  "thumbnail": "https://cdn.cloudflare.steamstatic.com/steam/apps/1448840/header.jpg",
+  "steamUrl": "https://store.steampowered.com/app/1448840/Very_Very_Valet/",
+  "isthereUrl": "https://isthereanydeal.com/game/very-very-valet/info/",
+  "tags": ["멀티", "협동", "캐주얼", "코미디", "액션", "2022", "아직안함"]
+},
+{
+  "name": "Spacelines from the Far Out",
+  "thumbnail": "https://cdn.cloudflare.steamstatic.com/steam/apps/1412850/header.jpg",
+  "steamUrl": "https://store.steampowered.com/app/1412850/Spacelines_from_the_Far_Out/",
+  "isthereUrl": "https://isthereanydeal.com/game/spacelines-from-the-far-out/info/",
+  "tags": ["멀티", "협동", "캐주얼", "우주", "2022", "아직안함"]
+},
+{
+  "name": "Diner Bros",
+  "thumbnail": "https://cdn.cloudflare.steamstatic.com/steam/apps/846800/header.jpg",
+  "steamUrl": "https://store.steampowered.com/app/846800/Diner_Bros/",
+  "isthereUrl": "https://isthereanydeal.com/game/diner-bros/info/",
+  "tags": ["멀티", "협동", "요리", "캐주얼","2018", "아직안함"]
+},
+{
+  "name": "Black Mesa",
+  "thumbnail": "https://cdn.cloudflare.steamstatic.com/steam/apps/362890/header.jpg",
+  "steamUrl": "https://store.steampowered.com/app/362890/Black_Mesa/",
+  "isthereUrl": "https://isthereanydeal.com/game/black-mesa/info/",
+  "tags": ["싱글", "FPS", "액션", "SF", "고전", "2020", "아직안함"]
+},
+{
+  "name": "Age of Empires II: Definitive Edition",
+  "thumbnail": "https://cdn.cloudflare.steamstatic.com/steam/apps/813780/header.jpg",
+  "steamUrl": "https://store.steampowered.com/app/813780/Age_of_Empires_II_Definitive_Edition/",
+  "isthereUrl": "https://isthereanydeal.com/game/age-of-empires-ii-definitive-edition/info/",
+  "tags": ["싱글", "멀티", "전략", "RTS", "역사", "2019", "유튜브"],
+  "youtubePlaylistUrl": "https://www.youtube.com/playlist?list=PLtgtY3ehtJpVpTl_qIfLIWXppA7ysRLga"
+},
 ];
