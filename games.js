@@ -758,7 +758,6 @@
   "steamUrl": "https://store.steampowered.com/app/1895810/_/",
   "isthereUrl": "https://isthereanydeal.com/game/infinity-strash-dragon-quest-the-adventure-of-dai/info/",
   "tags": ["싱글", "RPG", "액션", "판타지","2024","하트","노잼", "아직안함"],
-  "youtubePlaylistUrl": "https://www.youtube.com/playlist?list=PLtgtY3ehtJpWbMsaIorRa_BTOW-Q6R1VA",
   cmds: {
     "하트": "무지무지 잼난 만화",
     "노잼": "ㅠㅠ 근데 똥겜으로 만들었어"}
@@ -782,7 +781,8 @@
   "thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/460930/header.jpg",
   "steamUrl": "https://store.steampowered.com/app/460930/Tom_Clancys_Ghost_Recon_Wildlands/",
   "isthereUrl": "https://isthereanydeal.com/game/tom-clancys-ghost-recon-wildlands/info/",
-  "tags": ["싱글", "멀티", "액션", "오픈월드","2017", "슈팅", "아직안함"]
+  "tags": ["싱글", "멀티", "액션", "오픈월드","2017", "슈팅", "유튜브"],
+  "youtubePlaylistUrl": "https://www.youtube.com/playlist?list=PLtgtY3ehtJpWxMeUyxg68lWirkpC5yw86"	
 },
 {
   "name": "Tom Clancy's Ghost Recon® Breakpoint",
@@ -900,7 +900,8 @@
   thumbnail: "https://cdn.cloudflare.steamstatic.com/steam/apps/312660/header.jpg",
   steamUrl: "https://store.steampowered.com/app/312660/Sniper_Elite_4/",
   isthereUrl: "https://isthereanydeal.com/game/sniper-elite-4/info/",
-  tags: ["싱글", "멀티", "TPS", "저격", "전쟁", "잠입", "2017", "아직안함"]
+  tags: ["싱글", "멀티", "TPS", "저격", "전쟁", "잠입", "2017", "유튜브"],
+  "youtubePlaylistUrl": "https://www.youtube.com/playlist?list=PLtgtY3ehtJpVvg04qxvfesscq8biyfmeS"	
 },
 {
   name: "Sniper Elite 3",
