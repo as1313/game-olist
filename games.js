@@ -14,7 +14,7 @@
       steamUrl: "https://store.steampowered.com/app/620/Portal_2/",
       isthereUrl: "https://isthereanydeal.com/game/portal-2/info/",
       thumbnail: "https://cdn.cloudflare.steamstatic.com/steam/apps/620/header.jpg",
-      tags: ["멀티","협동","2011","퍼즐","GOTY","cmd","클리어"],
+      tags: ["멀티","협동","2011","퍼즐","cmd","클리어"],
       cmd: "3D멀미 생길수있음"
     },
     {
@@ -22,7 +22,7 @@
       steamUrl: "https://store.steampowered.com/app/1426210/It_Takes_Two/",
       isthereUrl: "https://isthereanydeal.com/game/it-takes-two/info/",
       thumbnail: "https://cdn.cloudflare.steamstatic.com/steam/apps/1426210/header.jpg",
-      tags: ["멀티","협동","클리어","2021","하트눈","유튜브"],
+      tags: ["멀티","협동","클리어","2021","GOTY","하트눈","유튜브"],
       youtubePlaylistUrl: "https://www.youtube.com/playlist?list=PLtgtY3ehtJpXDxm54AdS5R6NnRaCG_pCW"
     },
     {
@@ -228,7 +228,7 @@
   steamUrl: "https://store.steampowered.com/app/49520/Borderlands_2/",
   isthereUrl: "https://isthereanydeal.com/game/borderlands-2/info/",
   thumbnail: "https://cdn.cloudflare.steamstatic.com/steam/apps/49520/header.jpg",
-  tags: ["멀티", "협동", "액션", "FPS", "RPG","2012","GOTY", "루터슈터","아직안함"]
+  tags: ["멀티", "협동", "액션", "FPS", "RPG","2012", "루터슈터","아직안함"]
 },
 {
   name: "POPUCOM / 팝유컴",
@@ -626,7 +626,7 @@
   "thumbnail": "https://cdn.cloudflare.steamstatic.com/steam/apps/435150/header.jpg",
   "steamUrl": "https://store.steampowered.com/app/435150/Divinity_Original_Sin_2__Definitive_Edition/",
   "isthereUrl": "https://isthereanydeal.com/game/divinity-original-sin-2-definitive-edition/info/",
-  "tags": ["멀티", "턴제", "RPG", "판타지", "2017", "GOTY", "하트", "유튜브"],
+  "tags": ["싱글","멀티", "턴제", "RPG", "판타지", "2017", "BEST RPG", "하트눈", "유튜브"],
   "youtubePlaylistUrl": "https://www.youtube.com/playlist?list=PLtgtY3ehtJpXDh1MBYGYSlJzwYThyvhMQ"
 },
 {
@@ -865,7 +865,7 @@
   "thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1649240/header.jpg",
   "steamUrl": "https://store.steampowered.com/app/1649240/Returnal/",
   "isthereUrl": "https://isthereanydeal.com/game/returnal/info/",
-  "tags": ["싱글", "멀티", "TPS", "로그라이크","2023", "고난이도", "GOTY", "아직안함"]
+  "tags": ["싱글", "멀티", "TPS", "로그라이크","2023", "고난이도", "BEST ACT", "아직안함"]
 },
 {
   "name": "FBC: Firebreak",
