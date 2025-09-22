@@ -626,7 +626,7 @@
   "thumbnail": "https://cdn.cloudflare.steamstatic.com/steam/apps/435150/header.jpg",
   "steamUrl": "https://store.steampowered.com/app/435150/Divinity_Original_Sin_2__Definitive_Edition/",
   "isthereUrl": "https://isthereanydeal.com/game/divinity-original-sin-2-definitive-edition/info/",
-  "tags": ["싱글","멀티", "턴제", "RPG", "판타지", "2017", "BEST RPG", "하트눈", "유튜브"],
+  "tags": ["싱글","멀티", "턴제", "RPG", "판타지", "2017", "BEST RPG", "하트", "유튜브"],
   "youtubePlaylistUrl": "https://www.youtube.com/playlist?list=PLtgtY3ehtJpXDh1MBYGYSlJzwYThyvhMQ"
 },
 {
@@ -715,7 +715,8 @@
   "thumbnail": "https://cdn.cloudflare.steamstatic.com/steam/apps/768200/header.jpg",
   "steamUrl": "https://store.steampowered.com/app/768200/Smalland_Survive_the_Wilds/",
   "isthereUrl": "https://isthereanydeal.com/game/smalland-survive-the-wilds/info/",
-  "tags": ["멀티", "생존", "탐험", "오픈월드","2024", "캐주얼", "아직안함"]
+  "tags": ["멀티", "생존", "탐험", "오픈월드","2024", "캐주얼", "유튜브"],
+  "youtubePlaylistUrl": "https://www.youtube.com/playlist?list=PLtgtY3ehtJpWq123sohFvxkQ7xfmFrJSt"	
 },
 {
   "name": "Revenge of the Savage Planet / 리벤지 오브 더 새비지 플레닛",
@@ -1026,13 +1027,6 @@
   ]
 },
 {
-  name: "Diner Bros",
-  thumbnail: "https://cdn.cloudflare.steamstatic.com/steam/apps/846800/header.jpg",
-  steamUrl: "https://store.steampowered.com/app/846800/Diner_Bros/",
-  isthereUrl: "https://isthereanydeal.com/game/diner-bros/info/",
-  tags: ["멀티", "요리", "협동", "2018", "아직안함"]
-},
-{
   name: "Raft",
   thumbnail: "https://cdn.cloudflare.steamstatic.com/steam/apps/648800/header.jpg",
   steamUrl: "https://store.steampowered.com/app/648800/Raft/",
@@ -1121,5 +1115,45 @@
   "isthereUrl": "https://isthereanydeal.com/game/age-of-empires-ii-definitive-edition/info/",
   "tags": ["싱글", "멀티", "전략", "RTS", "역사", "2019", "유튜브"],
   "youtubePlaylistUrl": "https://www.youtube.com/playlist?list=PLtgtY3ehtJpVpTl_qIfLIWXppA7ysRLga"
+},
+{
+  "name": "Hogwarts Legacy / 호그와트 레거시",
+  "thumbnail": "https://cdn.cloudflare.steamstatic.com/steam/apps/990080/header.jpg",
+  "steamUrl": "https://store.steampowered.com/app/990080/_/",
+  "isthereUrl": "https://isthereanydeal.com/game/hogwarts-legacy/info/",
+  "tags": ["싱글", "RPG", "액션", "오픈월드", "판타지", "2023", "아직안함"]
+},
+{
+  name: "Nine Parchments",
+  thumbnail: "https://cdn.cloudflare.steamstatic.com/steam/apps/471550/header.jpg",
+  steamUrl: "https://store.steampowered.com/app/471550/Nine_Parchments/",
+  isthereUrl: "https://isthereanydeal.com/game/nine-parchments/info/",
+  tags: ["싱글", "멀티", "액션 RPG", "협동", "판타지", "2017", "유튜브"],
+  youtubePlaylistUrl: "https://www.youtube.com/playlist?list=PLtgtY3ehtJpWMz24tuPk15M35YHKIu9lm"
+},//#141
+{
+  name: "Apex 레전드™",
+  thumbnail: "https://cdn.cloudflare.steamstatic.com/steam/apps/1172470/header.jpg",
+  steamUrl: "https://store.steampowered.com/app/1172470/Apex/",
+  isthereUrl: "https://isthereanydeal.com/game/apex-legends/info/",
+  tags: ["멀티", "배틀로얄", "슈터", "FPS", "팀플레이", "2019", "하트", "유튜브"],
+  youtubePlaylistUrl: "https://www.youtube.com/playlist?list=PLtgtY3ehtJpVZI6iT4WIVKsArDm-il-K6",
+  cmds: {
+    "하트": "총겜은 어려워요"
+  }
+},{
+  name: "Wildmender",
+  thumbnail: "https://cdn.cloudflare.steamstatic.com/steam/apps/1599330/header.jpg",
+  steamUrl: "https://store.steampowered.com/app/1599330/Wildmender/",
+  isthereUrl: "https://isthereanydeal.com/game/wildmender/info/",
+  tags: ["멀티", "시뮬레이션", "생존", "농장", "오픈월드", "탐험", "2023", "유튜브"],
+  youtubePlaylistUrl: "https://www.youtube.com/playlist?list=PLtgtY3ehtJpX7u1jWhFzKj0zzk9r7OUL-"
+},{
+  name: "Retail Company Simulator",
+  thumbnail: "https://cdn.cloudflare.steamstatic.com/steam/apps/3089130/header.jpg",
+  steamUrl: "https://store.steampowered.com/app/3089130/Retail_Company_Simulator/",
+  isthereUrl: "https://isthereanydeal.com/game/retail-company-simulator/info/",
+  tags: ["싱글", "멀티", "시뮬레이션", "경영", "캐주얼", "2024", "유튜브"],
+  youtubePlaylistUrl: "https://www.youtube.com/playlist?list=PLtgtY3ehtJpVdKmJ72AFVXupMgX8nAJYa"
 },
 ];
