@@ -1146,7 +1146,7 @@
   thumbnail: "https://cdn.cloudflare.steamstatic.com/steam/apps/1599330/header.jpg",
   steamUrl: "https://store.steampowered.com/app/1599330/Wildmender/",
   isthereUrl: "https://isthereanydeal.com/game/wildmender/info/",
-  tags: ["멀티", "시뮬레이션", "생존", "농장", "오픈월드", "탐험", "2023", "유튜브"],
+  tags: ["멀티", "귀여움", "생존", "농장", "오픈월드", "탐험", "2023", "유튜브"],
   youtubePlaylistUrl: "https://www.youtube.com/playlist?list=PLtgtY3ehtJpX7u1jWhFzKj0zzk9r7OUL-"
 },{
   name: "Retail Company Simulator",
@@ -1155,5 +1155,39 @@
   isthereUrl: "https://isthereanydeal.com/game/retail-company-simulator/info/",
   tags: ["싱글", "멀티", "시뮬레이션", "경영", "캐주얼", "2024", "유튜브"],
   youtubePlaylistUrl: "https://www.youtube.com/playlist?list=PLtgtY3ehtJpVdKmJ72AFVXupMgX8nAJYa"
+},
+{
+  "name": "DRAGON BALL XENOVERSE 2",
+  "thumbnail": "https://cdn.cloudflare.steamstatic.com/steam/apps/454650/header.jpg",
+  "steamUrl": "https://store.steampowered.com/app/454650/DRAGON_BALL_XENOVERSE_2/",
+  "isthereUrl": "https://isthereanydeal.com/game/dragon-ball-xenoverse-2/info/",
+  "tags": ["싱글", "멀티", "액션", "롤플레잉", "2016", "유튜브"],
+  "youtubePlaylistUrl": "https://www.youtube.com/playlist?list=PLtgtY3ehtJpVN9xa5bKujct4miVrX2LoS",
+  "cmds": []
+},
+{
+  "name": "Agatha Christie - Murder on the Orient Express / 애거서 크리스티: 오리엔트 특급 살인",
+  "thumbnail": "https://cdn.cloudflare.steamstatic.com/steam/apps/1904790/header.jpg",
+  "steamUrl": "https://store.steampowered.com/app/1904790/Agatha_Christie__Murder_on_the_Orient_Express/",
+  "isthereUrl": "https://isthereanydeal.com/game/agatha-christie-murder-on-the-orient-express/info/",
+  "tags": ["싱글", "추리", "2023", "유튜브"],
+  "youtubePlaylistUrl": "https://www.youtube.com/playlist?list=PLtgtY3ehtJpWuSluCH9h9rMlRu8aUfBpq",
+  "cmds": []
+},
+{
+  "name": "Danganronpa: Trigger Happy Havoc / 단간론파 희망의 학교와 절망의 고교생" ,
+  "thumbnail": "https://cdn.cloudflare.steamstatic.com/steam/apps/413410/header.jpg",
+  "steamUrl": "https://store.steampowered.com/app/413410/Danganronpa_Trigger_Happy_Havoc/",
+  "isthereUrl": "https://isthereanydeal.com/game/danganronpa-trigger-happy-havoc/info/",
+  "tags": ["싱글", "추리", "2016", "아직안함"],
+  "cmds": []
+},
+{
+  "name": "연운",
+  "thumbnail": "https://cdn.cloudflare.steamstatic.com/steam/apps/3564740/header.jpg",
+  "steamUrl": "https://store.steampowered.com/app/3564740/",
+  "isthereUrl": "https://isthereanydeal.com/game/where-winds-meet/info/",
+  "tags": ["멀티", "액션", "무협", "RPG", "2025", "아직안함"],
+  "cmds": []
 },
 ];
