@@ -243,7 +243,7 @@
   steamUrl: "https://store.steampowered.com/app/2221490/Tom_Clancys_The_Division_2/",
   isthereUrl: "https://isthereanydeal.com/game/tom-clancys-the-division-2/info/",
   thumbnail: "https://cdn.cloudflare.steamstatic.com/steam/apps/2221490/header.jpg",
-  tags: ["멀티", "TPS", "협동","2023", "하트","루터슈터", "유튜브"],
+  tags: ["멀티", "TPS", "협동","2023", "하트","Tom Clancy’s","루터슈터", "유튜브"],
   youtubePlaylistUrl: "https://www.youtube.com/playlist?list=PLtgtY3ehtJpVTrLnkXiNhKZMs_d2dkauf"
 },
   {
@@ -495,7 +495,7 @@
   "thumbnail": "https://cdn.cloudflare.steamstatic.com/steam/apps/365590/header.jpg",
   "steamUrl": "https://store.steampowered.com/app/365590/Tom_Clancys_The_Division/",
   "isthereUrl": "https://isthereanydeal.com/game/tom-clancys-the-division/info/",
-  "tags": ["멀티", "TPS", "루터슈터", "온라인", "오픈월드","2016", "하트", "클리어","유튜브"],
+  "tags": ["멀티", "TPS", "루터슈터", "온라인", "오픈월드","Tom Clancy’s","2016", "하트", "클리어","유튜브"],
   youtubePlaylistUrl: "https://www.youtube.com/playlist?list=PLtgtY3ehtJpWlsHRcZGCQKm-i7CDl8DUF"
 },
 {
@@ -570,11 +570,11 @@
   "youtubePlaylistUrl": "https://www.youtube.com/playlist?list=PLtgtY3ehtJpXOfkzCEZjsxI_90_Jap_3d"
 },
 {
-  "name": "For The King",
+  "name": "For The King / 포더킹",
   "thumbnail": "https://cdn.cloudflare.steamstatic.com/steam/apps/527230/header.jpg",
   "steamUrl": "https://store.steampowered.com/app/527230/For_The_King/",
   "isthereUrl": "https://isthereanydeal.com/game/for-the-king/info/",
-  "tags": ["멀티", "턴제", "전략", "RPG", "2018", "하트", "유튜브"],
+  "tags": ["멀티", "턴제", "전략", "RPG","For The King", "2018", "하트", "유튜브"],
   "youtubePlaylistUrl": "https://www.youtube.com/playlist?list=PLtgtY3ehtJpVFvBmIr0qMwTHDDsNFeXwl"
 },
 {
@@ -782,7 +782,7 @@
   "thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/460930/header.jpg",
   "steamUrl": "https://store.steampowered.com/app/460930/Tom_Clancys_Ghost_Recon_Wildlands/",
   "isthereUrl": "https://isthereanydeal.com/game/tom-clancys-ghost-recon-wildlands/info/",
-  "tags": ["싱글", "멀티", "액션", "오픈월드","2017", "슈팅", "유튜브"],
+  "tags": ["싱글", "멀티", "액션", "오픈월드","Tom Clancy’s","2017", "슈팅", "유튜브"],
   "youtubePlaylistUrl": "https://www.youtube.com/playlist?list=PLtgtY3ehtJpWxMeUyxg68lWirkpC5yw86"	
 },
 {
@@ -790,7 +790,7 @@
   "thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/2231380/header.jpg",
   "steamUrl": "https://store.steampowered.com/app/2231380/Tom_Clancys_Ghost_Recon_Breakpoint/",
   "isthereUrl": "https://isthereanydeal.com/game/tom-clancys-ghost-recon-breakpoint/info/",
-  "tags": ["싱글", "멀티", "액션", "오픈월드","2023", "슈팅", "아직안함"]
+  "tags": ["싱글", "멀티", "액션", "오픈월드","Tom Clancy’s","2023", "슈팅", "아직안함"]
 },
 {
   "name": "Ys VIII: Lacrimosa of DANA",
@@ -1161,9 +1161,9 @@
   "thumbnail": "https://cdn.cloudflare.steamstatic.com/steam/apps/454650/header.jpg",
   "steamUrl": "https://store.steampowered.com/app/454650/DRAGON_BALL_XENOVERSE_2/",
   "isthereUrl": "https://isthereanydeal.com/game/dragon-ball-xenoverse-2/info/",
-  "tags": ["싱글", "멀티", "액션", "롤플레잉", "2016", "유튜브"],
+  "tags": ["싱글", "멀티", "액션", "롤플레잉", "2016","노잼", "유튜브"],
   "youtubePlaylistUrl": "https://www.youtube.com/playlist?list=PLtgtY3ehtJpVN9xa5bKujct4miVrX2LoS",
-  "cmds": []
+  cmds: {"노잼": "팬게임으로서는 재밌음,게임으로서는 재미없음"}
 },
 {
   "name": "Agatha Christie - Murder on the Orient Express / 애거서 크리스티: 오리엔트 특급 살인",
@@ -1184,10 +1184,56 @@
 },
 {
   "name": "연운",
-  "thumbnail": "https://cdn.cloudflare.steamstatic.com/steam/apps/3564740/header.jpg",
+  "thumbnail": "https://assets.isthereanydeal.com/0195e9fb-de2b-71a2-b356-fdd11a4d956b/banner400.jpg?t=1770362412",
   "steamUrl": "https://store.steampowered.com/app/3564740/",
   "isthereUrl": "https://isthereanydeal.com/game/where-winds-meet/info/",
   "tags": ["멀티", "액션", "무협", "RPG", "2025", "아직안함"],
-  "cmds": []
 },
+{
+  "name": "For The King II / 포더킹2",
+  "thumbnail": "https://cdn.cloudflare.steamstatic.com/steam/apps/1676840/header.jpg",
+  "steamUrl": "https://store.steampowered.com/app/1676840/For_The_King_II/",
+  "isthereUrl": "https://isthereanydeal.com/game/for-the-king-ii/info/",
+  "tags": ["싱글", "멀티", "전략","하트","For The King", "2023", "유튜브" ],
+  "youtubePlaylistUrl": "https://www.youtube.com/playlist?list=PLtgtY3ehtJpVOKq9Y0TGPPngVhWXr9DgP"
+},
+{
+  name: "Tomb Raider",
+  thumbnail: "https://cdn.cloudflare.steamstatic.com/steam/apps/203160/header.jpg",
+  steamUrl: "https://store.steampowered.com/app/203160/Tomb_Raider_Game_of_the_Year/",
+  isthereUrl: "https://isthereanydeal.com/game/tomb-raider-game-of-the-year/info/",
+  tags: ["싱글", "액션", "어드벤처","Tomb Raider", "2013", "유튜브"],
+  youtubePlaylistUrl: "https://www.youtube.com/playlist?list=PLtgtY3ehtJpWF96UILa4F6VLazcqJEE5A"
+},
+{
+  name: "Rise of the Tomb Raider™",
+  thumbnail: "https://cdn.cloudflare.steamstatic.com/steam/apps/391220/header.jpg",
+  steamUrl: "https://store.steampowered.com/app/391220/Rise_of_the_Tomb_Raider/",
+  isthereUrl: "https://isthereanydeal.com/game/rise-of-the-tomb-raider/info/",
+  tags: ["싱글", "액션", "어드벤처","Tomb Raider", "2016", "유튜브"],
+  youtubePlaylistUrl: "https://www.youtube.com/playlist?list=PLtgtY3ehtJpWuBVun8YWe1j7fN5EJBEoP"
+},
+{
+  name: "Shadow of the Tomb Raider: Definitive Edition",
+  thumbnail: "https://cdn.cloudflare.steamstatic.com/steam/apps/750920/header.jpg",
+  steamUrl: "https://store.steampowered.com/app/750920/Shadow_of_the_Tomb_Raider_Definitive_Edition/",
+  isthereUrl: "https://isthereanydeal.com/game/shadow-of-the-tomb-raider-definitive-edition/info/",
+  tags: ["싱글", "액션", "어드벤처","Tomb Raider", "2018", "아직안함"]
+},
+{
+  name: "두근두근타운 / Heartopia",
+  thumbnail: "https://assets.isthereanydeal.com/0199cbcb-751f-7233-8456-dbabd48d0616/banner400.jpg?t=1768888516",
+  steamUrl: "https://store.steampowered.com/app/4025700/_/",
+  isthereUrl: "https://isthereanydeal.com/game/heartopia/info/",
+  tags: ["멀티", "생활", "귀여움", "2026", "유튜브"],
+  youtubePlaylistUrl: "https://www.youtube.com/playlist?list=PLtgtY3ehtJpV1GSn20IUq24kmdSuC_ihl"
+},
+{
+  name: "Gloomhaven",
+  thumbnail: "https://cdn.cloudflare.steamstatic.com/steam/apps/780290/header.jpg",
+  steamUrl: "https://store.steampowered.com/app/780290/Gloomhaven/",
+  isthereUrl: "https://isthereanydeal.com/game/gloomhaven/info/",
+  tags: ["멀티", "RPG", "전략", "2021", "유튜브"],
+  youtubePlaylistUrl: "https://www.youtube.com/playlist?list=PLtgtY3ehtJpUPOWumdSSt5tQRmd6oG16N"
+}
 ];
